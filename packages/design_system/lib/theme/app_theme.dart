@@ -88,7 +88,7 @@ class DsTheme {
       outline:
           tokens.borderPrimary,
       error:
-          GlobalTokens.orange500,
+          GlobalTokens.red500,
     );
 
     final base =
