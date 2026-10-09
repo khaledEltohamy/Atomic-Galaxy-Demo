@@ -1,0 +1,515 @@
+{
+  "background": {
+    "primary": {
+      "$type": "color",
+      "$value": "{base.white}",
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:1:21",
+          "variableKey": "c321b1fe47ccce766ebfa1c1308fbc138ce53c50",
+          "variableName": "background/primary",
+          "variableType": "color",
+          "collectionId": "VariableCollectionId:1:20",
+          "collectionName": "alias",
+          "nodeId": "2:23",
+          "nodeName": "Profile",
+          "nodeType": "FRAME",
+          "page": "Pages",
+          "designId": "Profile"
+        }
+      }
+    },
+    "secondary": {
+      "$type": "color",
+      "$value": "{gray.50}",
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:1:22",
+          "variableKey": "25c04da835e8a59e75cf77a30d1fb8a79f831f53",
+          "variableName": "background/secondary",
+          "variableType": "color",
+          "collectionId": "VariableCollectionId:1:20",
+          "collectionName": "alias",
+          "designId": null
+        }
+      }
+    }
+  },
+  "border": {
+    "primary": {
+      "$type": "color",
+      "$value": "{gray.200}",
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:1:23",
+          "variableKey": "ac32ef57dc02ed2d51df9230bac2e1e84602b73d",
+          "variableName": "border/primary",
+          "variableType": "color",
+          "collectionId": "VariableCollectionId:1:20",
+          "collectionName": "alias",
+          "nodeId": "I2:43;2:18",
+          "nodeName": "Image",
+          "nodeType": "FRAME",
+          "page": "Pages",
+          "designId": "Image"
+        }
+      }
+    }
+  },
+  "button": {
+    "primary": {
+      "background": {
+        "$type": "color",
+        "$value": "{violet.500}",
+        "$extensions": {
+          "figma": {
+            "variableId": "VariableID:1:24",
+            "variableKey": "24640dc1a60dc7123a457259b73d1561ad0f6821",
+            "variableName": "button/primary/background",
+            "variableType": "color",
+            "collectionId": "VariableCollectionId:1:20",
+            "collectionName": "alias",
+            "nodeId": "2:51",
+            "nodeName": "Button",
+            "nodeType": "INSTANCE",
+            "page": "Pages",
+            "designId": "Button"
+          }
+        }
+      },
+      "hover": {
+        "$type": "color",
+        "$value": "{violet.600}",
+        "$extensions": {
+          "figma": {
+            "variableId": "VariableID:1:25",
+            "variableKey": "6455cd9fd1d853abf6d87b61b4468bfa5e55f5f2",
+            "variableName": "button/primary/hover",
+            "variableType": "color",
+            "collectionId": "VariableCollectionId:1:20",
+            "collectionName": "alias",
+            "designId": null
+          }
+        }
+      },
+      "pressed": {
+        "$type": "color",
+        "$value": "{violet.700}",
+        "$extensions": {
+          "figma": {
+            "variableId": "VariableID:1:26",
+            "variableKey": "5321b1d4a7136ff5cf17cead4b8da4209652d651",
+            "variableName": "button/primary/pressed",
+            "variableType": "color",
+            "collectionId": "VariableCollectionId:1:20",
+            "collectionName": "alias",
+            "designId": null
+          }
+        }
+      },
+      "disabled": {
+        "$type": "color",
+        "$value": "{gray.200}",
+        "$extensions": {
+          "figma": {
+            "variableId": "VariableID:1:27",
+            "variableKey": "3576639e6a5a3d1ddd8ca4dd66354414a6fb5526",
+            "variableName": "button/primary/disabled",
+            "variableType": "color",
+            "collectionId": "VariableCollectionId:1:20",
+            "collectionName": "alias",
+            "designId": null
+          }
+        }
+      },
+      "text": {
+        "$type": "color",
+        "$value": "{base.white}",
+        "$extensions": {
+          "figma": {
+            "variableId": "VariableID:1:28",
+            "variableKey": "d3b55b6b59e51a7e96a686d3b006e0b723ad12c9",
+            "variableName": "button/primary/text",
+            "variableType": "color",
+            "collectionId": "VariableCollectionId:1:20",
+            "collectionName": "alias",
+            "nodeId": "I2:51;2:4",
+            "nodeName": "Label",
+            "nodeType": "TEXT",
+            "page": "Pages",
+            "designId": "Label"
+          }
+        }
+      },
+      "border": {
+        "$type": "color",
+        "$value": "{violet.500}",
+        "$extensions": {
+          "figma": {
+            "variableId": "VariableID:1:29",
+            "variableKey": "369b6dfb09e29566351544d0000c45d2149e1abf",
+            "variableName": "button/primary/border",
+            "variableType": "color",
+            "collectionId": "VariableCollectionId:1:20",
+            "collectionName": "alias",
+            "designId": null
+          }
+        }
+      }
+    },
+    "secondary": {
+      "background": {
+        "$type": "color",
+        "$value": "{gray.50}",
+        "$extensions": {
+          "figma": {
+            "variableId": "VariableID:1:30",
+            "variableKey": "183e8f9053d5e01a74eee913f92b69f97cc8c86b",
+            "variableName": "button/secondary/background",
+            "variableType": "color",
+            "collectionId": "VariableCollectionId:1:20",
+            "collectionName": "alias",
+            "nodeId": "2:39",
+            "nodeName": "Button",
+            "nodeType": "INSTANCE",
+            "page": "Pages",
+            "designId": "Button"
+          }
+        }
+      },
+      "text": {
+        "$type": "color",
+        "$value": "{gray.900}",
+        "$extensions": {
+          "figma": {
+            "variableId": "VariableID:1:31",
+            "variableKey": "eadf3d1ce58c51d404258ed2a3cd18132a140745",
+            "variableName": "button/secondary/text",
+            "variableType": "color",
+            "collectionId": "VariableCollectionId:1:20",
+            "collectionName": "alias",
+            "nodeId": "I2:39;2:6",
+            "nodeName": "Label",
+            "nodeType": "TEXT",
+            "page": "Pages",
+            "designId": "Label"
+          }
+        }
+      },
+      "border": {
+        "$type": "color",
+        "$value": "{gray.200}",
+        "$extensions": {
+          "figma": {
+            "variableId": "VariableID:1:32",
+            "variableKey": "a24636d22afd34e46b7ae43e702e7a707cd533a2",
+            "variableName": "button/secondary/border",
+            "variableType": "color",
+            "collectionId": "VariableCollectionId:1:20",
+            "collectionName": "alias",
+            "designId": null
+          }
+        }
+      }
+    },
+    "tertiary": {
+      "background": {
+        "$type": "color",
+        "$value": "{base.white}",
+        "$extensions": {
+          "figma": {
+            "variableId": "VariableID:1:33",
+            "variableKey": "eafbd9a9592f2884d0709906fee001fbd7be760c",
+            "variableName": "button/tertiary/background",
+            "variableType": "color",
+            "collectionId": "VariableCollectionId:1:20",
+            "collectionName": "alias",
+            "nodeId": "2:53",
+            "nodeName": "Button",
+            "nodeType": "INSTANCE",
+            "page": "Pages",
+            "designId": "Button"
+          }
+        }
+      },
+      "text": {
+        "$type": "color",
+        "$value": "{violet.500}",
+        "$extensions": {
+          "figma": {
+            "variableId": "VariableID:1:34",
+            "variableKey": "3bd0fa9d45fd877ea5e540a1eb1b6bc0c87c3100",
+            "variableName": "button/tertiary/text",
+            "variableType": "color",
+            "collectionId": "VariableCollectionId:1:20",
+            "collectionName": "alias",
+            "nodeId": "I2:53;2:8",
+            "nodeName": "Label",
+            "nodeType": "TEXT",
+            "page": "Pages",
+            "designId": "Label"
+          }
+        }
+      },
+      "border": {
+        "$type": "color",
+        "$value": "{base.white}",
+        "$extensions": {
+          "figma": {
+            "variableId": "VariableID:1:35",
+            "variableKey": "27a005d8ef6f835aea08564fbd2d546ab4d5840c",
+            "variableName": "button/tertiary/border",
+            "variableType": "color",
+            "collectionId": "VariableCollectionId:1:20",
+            "collectionName": "alias",
+            "designId": null
+          }
+        }
+      }
+    }
+  },
+  "card": {
+    "background": {
+      "$type": "color",
+      "$value": "{base.white}",
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:1:36",
+          "variableKey": "e548dc9d0e6d648166964a74cd35b3e91380089d",
+          "variableName": "card/background",
+          "variableType": "color",
+          "collectionId": "VariableCollectionId:1:20",
+          "collectionName": "alias",
+          "nodeId": "2:43",
+          "nodeName": "Card",
+          "nodeType": "INSTANCE",
+          "page": "Pages",
+          "designId": "Card"
+        }
+      }
+    },
+    "border": {
+      "$type": "color",
+      "$value": "{gray.200}",
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:1:37",
+          "variableKey": "5bf630085b7b33ed34ff740f427f67443e40074b",
+          "variableName": "card/border",
+          "variableType": "color",
+          "collectionId": "VariableCollectionId:1:20",
+          "collectionName": "alias",
+          "designId": null
+        }
+      }
+    }
+  },
+  "divider": {
+    "default": {
+      "$type": "color",
+      "$value": "{gray.200}",
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:1:38",
+          "variableKey": "786bc0e923282d11a722eaa68988739d3c7953b6",
+          "variableName": "divider/default",
+          "variableType": "color",
+          "collectionId": "VariableCollectionId:1:20",
+          "collectionName": "alias",
+          "designId": null
+        }
+      }
+    }
+  },
+  "focus": {
+    "border": {
+      "$type": "color",
+      "$value": "{violet.500}",
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:1:39",
+          "variableKey": "4b096aecc30256da6fbf705c631f4f08ac904d78",
+          "variableName": "focus/border",
+          "variableType": "color",
+          "collectionId": "VariableCollectionId:1:20",
+          "collectionName": "alias",
+          "designId": null
+        }
+      }
+    }
+  },
+  "icon": {
+    "primary": {
+      "$type": "color",
+      "$value": "{gray.700}",
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:1:40",
+          "variableKey": "4585054ca266c1a2717bf73062e5432e682bc037",
+          "variableName": "icon/primary",
+          "variableType": "color",
+          "collectionId": "VariableCollectionId:1:20",
+          "collectionName": "alias",
+          "designId": null
+        }
+      }
+    }
+  },
+  "input": {
+    "background": {
+      "$type": "color",
+      "$value": "{base.white}",
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:1:41",
+          "variableKey": "19f6f62d89479d73b1b0922ae27aed176a2d2b8e",
+          "variableName": "input/background",
+          "variableType": "color",
+          "collectionId": "VariableCollectionId:1:20",
+          "collectionName": "alias",
+          "nodeId": "2:48",
+          "nodeName": "TextField",
+          "nodeType": "INSTANCE",
+          "page": "Pages",
+          "designId": "TextField"
+        }
+      }
+    },
+    "border": {
+      "$type": "color",
+      "$value": "{gray.300}",
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:1:42",
+          "variableKey": "91a798e594cdd324d03a1f6c19433035a6d23254",
+          "variableName": "input/border",
+          "variableType": "color",
+          "collectionId": "VariableCollectionId:1:20",
+          "collectionName": "alias",
+          "designId": null
+        }
+      }
+    },
+    "borderCloudy": {
+      "$type": "color",
+      "$value": "{gray.200}",
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:1:43",
+          "variableKey": "7672610678ff60589f61f401396da7dbfeb585ec",
+          "variableName": "input/borderCloudy",
+          "variableType": "color",
+          "collectionId": "VariableCollectionId:1:20",
+          "collectionName": "alias",
+          "designId": null
+        }
+      }
+    },
+    "placeholder": {
+      "$type": "color",
+      "$value": "{gray.400}",
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:1:44",
+          "variableKey": "e1ed31ca81e467ec2395a84e6e0330c3b5b99c05",
+          "variableName": "input/placeholder",
+          "variableType": "color",
+          "collectionId": "VariableCollectionId:1:20",
+          "collectionName": "alias",
+          "nodeId": "I2:48;2:12",
+          "nodeName": "Placeholder",
+          "nodeType": "TEXT",
+          "page": "Pages",
+          "designId": "Placeholder"
+        }
+      }
+    },
+    "text": {
+      "$type": "color",
+      "$value": "{gray.900}",
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:1:45",
+          "variableKey": "eb0f480b9e3d4f976ad8b855c253e5aeb4caecd7",
+          "variableName": "input/text",
+          "variableType": "color",
+          "collectionId": "VariableCollectionId:1:20",
+          "collectionName": "alias",
+          "designId": null
+        }
+      }
+    }
+  },
+  "radio": {
+    "selected": {
+      "$type": "color",
+      "$value": "{violet.500}",
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:1:46",
+          "variableKey": "588696696d9098df01004ed2401a284bc4932a98",
+          "variableName": "radio/selected",
+          "variableType": "color",
+          "collectionId": "VariableCollectionId:1:20",
+          "collectionName": "alias",
+          "designId": null
+        }
+      }
+    }
+  },
+  "text": {
+    "primary": {
+      "$type": "color",
+      "$value": "{gray.900}",
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:1:47",
+          "variableKey": "a0204d06c9dcf3bec887a1aaa9dc2a51c3eb6eec",
+          "variableName": "text/primary",
+          "variableType": "color",
+          "collectionId": "VariableCollectionId:1:20",
+          "collectionName": "alias",
+          "nodeId": "I2:43;2:20",
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "page": "Pages",
+          "designId": "Title"
+        }
+      }
+    },
+    "secondary": {
+      "$type": "color",
+      "$value": "{gray.700}",
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:1:48",
+          "variableKey": "da98338ad0fa56d0350813df7b3595a3a00d5f60",
+          "variableName": "text/secondary",
+          "variableType": "color",
+          "collectionId": "VariableCollectionId:1:20",
+          "collectionName": "alias",
+          "nodeId": "I2:48;2:11",
+          "nodeName": "Label",
+          "nodeType": "TEXT",
+          "page": "Pages",
+          "designId": "Label"
+        }
+      }
+    },
+    "disabled": {
+      "$type": "color",
+      "$value": "{gray.400}",
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:1:49",
+          "variableKey": "a1f1d67b41e225d3db27db7ca5400a70c05c36ab",
+          "variableName": "text/disabled",
+          "variableType": "color",
+          "collectionId": "VariableCollectionId:1:20",
+          "collectionName": "alias",
+          "designId": null
+        }
+      }
+    }
+  }
+}

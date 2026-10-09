@@ -1,0 +1,134 @@
+{
+  "width": {
+    "33": {
+      "$type": "number",
+      "$value": 33
+    },
+    "34": {
+      "$type": "number",
+      "$value": 34
+    },
+    "46": {
+      "$type": "number",
+      "$value": 46
+    },
+    "62": {
+      "$type": "number",
+      "$value": 62
+    },
+    "88": {
+      "$type": "number",
+      "$value": 88
+    },
+    "105": {
+      "$type": "number",
+      "$value": 105
+    },
+    "286": {
+      "$type": "number",
+      "$value": 286
+    },
+    "290": {
+      "$type": "number",
+      "$value": 290
+    },
+    "308": {
+      "$type": "number",
+      "$value": 308
+    },
+    "312": {
+      "$type": "number",
+      "$value": 312
+    },
+    "318": {
+      "$type": "number",
+      "$value": 318
+    },
+    "320": {
+      "$type": "number",
+      "$value": 320
+    },
+    "340": {
+      "$type": "number",
+      "$value": 340
+    },
+    "342": {
+      "$type": "number",
+      "$value": 342
+    },
+    "360": {
+      "$type": "number",
+      "$value": 360
+    },
+    "390": {
+      "$type": "number",
+      "$value": 390
+    },
+    "712": {
+      "$type": "number",
+      "$value": 712
+    }
+  },
+  "height": {
+    "15": {
+      "$type": "number",
+      "$value": 15
+    },
+    "17": {
+      "$type": "number",
+      "$value": 17
+    },
+    "22": {
+      "$type": "number",
+      "$value": 22
+    },
+    "34": {
+      "$type": "number",
+      "$value": 34
+    },
+    "43": {
+      "$type": "number",
+      "$value": 43
+    },
+    "66": {
+      "$type": "number",
+      "$value": 66
+    },
+    "77": {
+      "$type": "number",
+      "$value": 77
+    },
+    "91": {
+      "$type": "number",
+      "$value": 91
+    },
+    "94": {
+      "$type": "number",
+      "$value": 94
+    },
+    "96": {
+      "$type": "number",
+      "$value": 96
+    },
+    "114": {
+      "$type": "number",
+      "$value": 114
+    },
+    "140": {
+      "$type": "number",
+      "$value": 140
+    },
+    "219": {
+      "$type": "number",
+      "$value": 219
+    },
+    "236": {
+      "$type": "number",
+      "$value": 236
+    },
+    "844": {
+      "$type": "number",
+      "$value": 844
+    }
+  }
+}

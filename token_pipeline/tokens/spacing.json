@@ -1,0 +1,42 @@
+{
+  "4": {
+    "$type": "number",
+    "$value": 4
+  },
+  "6": {
+    "$type": "number",
+    "$value": 6
+  },
+  "8": {
+    "$type": "number",
+    "$value": 8
+  },
+  "12": {
+    "$type": "number",
+    "$value": 12
+  },
+  "14": {
+    "$type": "number",
+    "$value": 14
+  },
+  "16": {
+    "$type": "number",
+    "$value": 16
+  },
+  "20": {
+    "$type": "number",
+    "$value": 20
+  },
+  "24": {
+    "$type": "number",
+    "$value": 24
+  },
+  "32": {
+    "$type": "number",
+    "$value": 32
+  },
+  "64": {
+    "$type": "number",
+    "$value": 64
+  }
+}
