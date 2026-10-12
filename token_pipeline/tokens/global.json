@@ -47,6 +47,21 @@
         }
       }
     },
+    "100": {
+      "$type": "color",
+      "$value": "#F1F5F9",
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:43:5",
+          "variableKey": "8a418638314f4d06b7e3b58917ff7b9ca3cb80b6",
+          "variableName": "color/gray/100",
+          "variableType": "color",
+          "collectionId": "VariableCollectionId:1:2",
+          "collectionName": "global",
+          "designId": null
+        }
+      }
+    },
     "200": {
       "$type": "color",
       "$value": "#E2E8F0",
@@ -256,6 +271,57 @@
           "variableId": "VariableID:1:19",
           "variableKey": "05e63af86970e418b1bc74d3956267706e599d8e",
           "variableName": "color/orange/700",
+          "variableType": "color",
+          "collectionId": "VariableCollectionId:1:2",
+          "collectionName": "global",
+          "designId": null
+        }
+      }
+    }
+  },
+  "green": {
+    "500": {
+      "$type": "color",
+      "$value": "#22C55E",
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:43:2",
+          "variableKey": "f8d4915a6c39a2d4b00200bda4faec1fbc526ea1",
+          "variableName": "color/green/500",
+          "variableType": "color",
+          "collectionId": "VariableCollectionId:1:2",
+          "collectionName": "global",
+          "designId": null
+        }
+      }
+    }
+  },
+  "red": {
+    "500": {
+      "$type": "color",
+      "$value": "#EF4444",
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:43:3",
+          "variableKey": "25b7cb14b268e6b709232a925c828fd9a87ffe1f",
+          "variableName": "color/red/500",
+          "variableType": "color",
+          "collectionId": "VariableCollectionId:1:2",
+          "collectionName": "global",
+          "designId": null
+        }
+      }
+    }
+  },
+  "amber": {
+    "400": {
+      "$type": "color",
+      "$value": "#FBBF24",
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:43:4",
+          "variableKey": "09b29bf1efffc21eeb4b2d05996214c1aa3a4847",
+          "variableName": "color/amber/400",
           "variableType": "color",
           "collectionId": "VariableCollectionId:1:2",
           "collectionName": "global",

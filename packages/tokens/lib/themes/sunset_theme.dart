@@ -8,9 +8,17 @@ import '../components/component_tokens.dart';
 class SunsetTheme {
   SunsetTheme._();
 
+  static const Color appBarBackground = AliasTokens.appBarBackground;
+
+  static const Color appBarTitle = AliasTokens.appBarTitle;
+
   static const Color backgroundPrimary = AliasTokens.backgroundPrimary;
 
   static const Color backgroundSecondary = AliasTokens.backgroundSecondary;
+
+  static const Color badgeBackground = AliasTokens.badgeBackground;
+
+  static const Color badgeText = AliasTokens.badgeText;
 
   static const Color borderPrimary = AliasTokens.borderPrimary;
 
@@ -56,6 +64,10 @@ class SunsetTheme {
 
   static const double cardComponentRadius = ComponentTokens.cardComponentRadius;
 
+  static const Color checkboxActive = SunsetTokens.checkboxActive;
+
+  static const Color checkboxBorder = AliasTokens.checkboxBorder;
+
   static const Color dividerDefault = AliasTokens.dividerDefault;
 
   static const Color focusBorder = SunsetTokens.focusBorder;
@@ -72,7 +84,33 @@ class SunsetTheme {
 
   static const Color inputText = AliasTokens.inputText;
 
+  static const Color navigationBarActive = SunsetTokens.navigationBarActive;
+
+  static const Color navigationBarBackground = AliasTokens.navigationBarBackground;
+
+  static const Color navigationBarInactive = AliasTokens.navigationBarInactive;
+
   static const Color radioSelected = SunsetTokens.radioSelected;
+
+  static const Color ratingStar = AliasTokens.ratingStar;
+
+  static const Color sliderActive = SunsetTokens.sliderActive;
+
+  static const Color sliderTrack = AliasTokens.sliderTrack;
+
+  static const Color statusDanger = AliasTokens.statusDanger;
+
+  static const Color statusSuccess = AliasTokens.statusSuccess;
+
+  static const Color surfaceImage = AliasTokens.surfaceImage;
+
+  static const Color switchActive = SunsetTokens.switchActive;
+
+  static const Color switchInactive = AliasTokens.switchInactive;
+
+  static const Color switchThumb = AliasTokens.switchThumb;
+
+  static const Color textAccent = SunsetTokens.textAccent;
 
   static const Color textDisabled = AliasTokens.textDisabled;
 

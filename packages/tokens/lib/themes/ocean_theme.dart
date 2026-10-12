@@ -8,9 +8,17 @@ import '../components/component_tokens.dart';
 class OceanTheme {
   OceanTheme._();
 
+  static const Color appBarBackground = AliasTokens.appBarBackground;
+
+  static const Color appBarTitle = AliasTokens.appBarTitle;
+
   static const Color backgroundPrimary = AliasTokens.backgroundPrimary;
 
   static const Color backgroundSecondary = AliasTokens.backgroundSecondary;
+
+  static const Color badgeBackground = AliasTokens.badgeBackground;
+
+  static const Color badgeText = AliasTokens.badgeText;
 
   static const Color borderPrimary = AliasTokens.borderPrimary;
 
@@ -56,6 +64,10 @@ class OceanTheme {
 
   static const double cardComponentRadius = ComponentTokens.cardComponentRadius;
 
+  static const Color checkboxActive = OceanTokens.checkboxActive;
+
+  static const Color checkboxBorder = AliasTokens.checkboxBorder;
+
   static const Color dividerDefault = AliasTokens.dividerDefault;
 
   static const Color focusBorder = OceanTokens.focusBorder;
@@ -72,7 +84,33 @@ class OceanTheme {
 
   static const Color inputText = AliasTokens.inputText;
 
+  static const Color navigationBarActive = OceanTokens.navigationBarActive;
+
+  static const Color navigationBarBackground = AliasTokens.navigationBarBackground;
+
+  static const Color navigationBarInactive = AliasTokens.navigationBarInactive;
+
   static const Color radioSelected = OceanTokens.radioSelected;
+
+  static const Color ratingStar = AliasTokens.ratingStar;
+
+  static const Color sliderActive = OceanTokens.sliderActive;
+
+  static const Color sliderTrack = AliasTokens.sliderTrack;
+
+  static const Color statusDanger = AliasTokens.statusDanger;
+
+  static const Color statusSuccess = AliasTokens.statusSuccess;
+
+  static const Color surfaceImage = AliasTokens.surfaceImage;
+
+  static const Color switchActive = OceanTokens.switchActive;
+
+  static const Color switchInactive = AliasTokens.switchInactive;
+
+  static const Color switchThumb = AliasTokens.switchThumb;
+
+  static const Color textAccent = OceanTokens.textAccent;
 
   static const Color textDisabled = AliasTokens.textDisabled;
 

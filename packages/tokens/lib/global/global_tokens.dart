@@ -12,6 +12,8 @@ class GlobalTokens {
 
   static const Color gray50 = Color(0xFFF8FAFC);
 
+  static const Color gray100 = Color(0xFFF1F5F9);
+
   static const Color gray200 = Color(0xFFE2E8F0);
 
   static const Color gray300 = Color(0xFFCBD5E1);
@@ -39,5 +41,11 @@ class GlobalTokens {
   static const Color orange600 = Color(0xFFEA580C);
 
   static const Color orange700 = Color(0xFFC2410C);
+
+  static const Color green500 = Color(0xFF22C55E);
+
+  static const Color red500 = Color(0xFFEF4444);
+
+  static const Color amber400 = Color(0xFFFBBF24);
 
 }
