@@ -4,8 +4,15 @@
 import 'package:flutter/cupertino.dart';
 
 import 'app_router.dart';
-import '../../src/modules/Common/presentation/pages/welcome.dart';
+import '../../src/modules/Common/presentation/pages/onboarding.dart';
+import '../../src/modules/Common/presentation/pages/login.dart';
+import '../../src/modules/Common/presentation/pages/home.dart';
+import '../../src/modules/Common/presentation/pages/cart.dart';
+import '../../src/modules/Common/presentation/pages/filters.dart';
+import '../../src/modules/Common/presentation/pages/product_details.dart';
 import '../../src/modules/Common/presentation/pages/profile.dart';
+import '../../src/modules/Common/presentation/pages/checkout.dart';
+import '../../src/modules/Common/presentation/pages/order_placed.dart';
 
 class AppRouteGenerator {
   const AppRouteGenerator._();
@@ -14,13 +21,53 @@ class AppRouteGenerator {
     RouteSettings settings,
   ) {
     switch (settings.name) {
-      case AppRouter.welcomeRoute:
+      case AppRouter.onboardingRoute:
         return CupertinoPageRoute(
           settings: const RouteSettings(
-            name: AppRouter.welcomeRoute,
+            name: AppRouter.onboardingRoute,
           ),
           builder: (context) =>
-              const Welcome(),
+              const Onboarding(),
+        );
+      case AppRouter.loginRoute:
+        return CupertinoPageRoute(
+          settings: const RouteSettings(
+            name: AppRouter.loginRoute,
+          ),
+          builder: (context) =>
+              const Login(),
+        );
+      case AppRouter.homeRoute:
+        return CupertinoPageRoute(
+          settings: const RouteSettings(
+            name: AppRouter.homeRoute,
+          ),
+          builder: (context) =>
+              const Home(),
+        );
+      case AppRouter.cartRoute:
+        return CupertinoPageRoute(
+          settings: const RouteSettings(
+            name: AppRouter.cartRoute,
+          ),
+          builder: (context) =>
+              const Cart(),
+        );
+      case AppRouter.filtersRoute:
+        return CupertinoPageRoute(
+          settings: const RouteSettings(
+            name: AppRouter.filtersRoute,
+          ),
+          builder: (context) =>
+              const Filters(),
+        );
+      case AppRouter.productDetailsRoute:
+        return CupertinoPageRoute(
+          settings: const RouteSettings(
+            name: AppRouter.productDetailsRoute,
+          ),
+          builder: (context) =>
+              const ProductDetails(),
         );
       case AppRouter.profileRoute:
         return CupertinoPageRoute(
@@ -29,6 +76,22 @@ class AppRouteGenerator {
           ),
           builder: (context) =>
               const Profile(),
+        );
+      case AppRouter.checkoutRoute:
+        return CupertinoPageRoute(
+          settings: const RouteSettings(
+            name: AppRouter.checkoutRoute,
+          ),
+          builder: (context) =>
+              const Checkout(),
+        );
+      case AppRouter.orderPlacedRoute:
+        return CupertinoPageRoute(
+          settings: const RouteSettings(
+            name: AppRouter.orderPlacedRoute,
+          ),
+          builder: (context) =>
+              const OrderPlaced(),
         );
       default:
         return null;
