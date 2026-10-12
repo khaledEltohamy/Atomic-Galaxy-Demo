@@ -20,4 +20,14 @@ class OceanTokens {
 
   static const Color radioSelected = GlobalTokens.blue500;
 
+  static const Color navigationBarActive = GlobalTokens.blue500;
+
+  static const Color switchActive = GlobalTokens.blue500;
+
+  static const Color sliderActive = GlobalTokens.blue500;
+
+  static const Color checkboxActive = GlobalTokens.blue500;
+
+  static const Color textAccent = GlobalTokens.blue500;
+
 }

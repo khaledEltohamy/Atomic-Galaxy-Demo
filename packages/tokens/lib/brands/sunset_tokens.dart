@@ -20,4 +20,14 @@ class SunsetTokens {
 
   static const Color radioSelected = GlobalTokens.orange500;
 
+  static const Color navigationBarActive = GlobalTokens.orange500;
+
+  static const Color switchActive = GlobalTokens.orange500;
+
+  static const Color sliderActive = GlobalTokens.orange500;
+
+  static const Color checkboxActive = GlobalTokens.orange500;
+
+  static const Color textAccent = GlobalTokens.orange500;
+
 }

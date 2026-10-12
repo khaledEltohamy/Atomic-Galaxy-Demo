@@ -4,10 +4,24 @@
 class AppRouter {
   const AppRouter._();
 
-  static const String initialRoute = '/welcome';
+  static const String initialRoute = '/onboarding';
 
-  static const String welcomeRoute = '/welcome';
+  static const String onboardingRoute = '/onboarding';
+
+  static const String loginRoute = '/login';
+
+  static const String homeRoute = '/home';
+
+  static const String cartRoute = '/cart';
+
+  static const String filtersRoute = '/filters';
+
+  static const String productDetailsRoute = '/product_details';
 
   static const String profileRoute = '/profile';
+
+  static const String checkoutRoute = '/checkout';
+
+  static const String orderPlacedRoute = '/order_placed';
 
 }

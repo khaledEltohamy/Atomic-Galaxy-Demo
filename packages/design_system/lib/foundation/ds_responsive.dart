@@ -92,7 +92,7 @@ class DsResponsiveBody extends StatelessWidget {
   final double? compactPadding;
   /// Horizontal page padding on medium (tablet) widths. Defaults to `SpacingTokens.spacing24`.
   final double? mediumPadding;
-  /// Horizontal page padding on expanded (desktop/web) widths. Defaults to `SpacingTokens.spacing32`.
+  /// Horizontal page padding on expanded (desktop/web) widths. Defaults to `SpacingTokens.spacing24`.
   final double? expandedPadding;
 
   @override
@@ -104,7 +104,7 @@ class DsResponsiveBody extends StatelessWidget {
         final size = breakpoints.sizeFor(constraints.maxWidth);
         final double padding = size == DsWindowSize.compact
             ? (compactPadding ?? SpacingTokens.spacing16)
-            : (size == DsWindowSize.medium ? (mediumPadding ?? SpacingTokens.spacing24) : (expandedPadding ?? SpacingTokens.spacing32));
+            : (size == DsWindowSize.medium ? (mediumPadding ?? SpacingTokens.spacing24) : (expandedPadding ?? SpacingTokens.spacing24));
 
         final content = Padding(
           padding: EdgeInsets.symmetric(horizontal: padding),

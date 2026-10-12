@@ -114,6 +114,91 @@
           }
         }
       }
+    },
+    "navigationBar": {
+      "active": {
+        "$type": "color",
+        "$value": "{blue.500}",
+        "$extensions": {
+          "figma": {
+            "variableId": "VariableID:43:25",
+            "variableKey": "c30730220c16d242bb551fa601ade4bb06832337",
+            "variableName": "navigationBar/active",
+            "variableType": "color",
+            "collectionId": "VariableCollectionId:1:61",
+            "collectionName": "ocean",
+            "designId": null
+          }
+        }
+      }
+    },
+    "switch": {
+      "active": {
+        "$type": "color",
+        "$value": "{blue.500}",
+        "$extensions": {
+          "figma": {
+            "variableId": "VariableID:43:26",
+            "variableKey": "bdbf824eaac47f029af34c55050661e1210c13d1",
+            "variableName": "switch/active",
+            "variableType": "color",
+            "collectionId": "VariableCollectionId:1:61",
+            "collectionName": "ocean",
+            "designId": null
+          }
+        }
+      }
+    },
+    "slider": {
+      "active": {
+        "$type": "color",
+        "$value": "{blue.500}",
+        "$extensions": {
+          "figma": {
+            "variableId": "VariableID:43:27",
+            "variableKey": "726aa5eb19663396d8b78f70300b6d120aa6529d",
+            "variableName": "slider/active",
+            "variableType": "color",
+            "collectionId": "VariableCollectionId:1:61",
+            "collectionName": "ocean",
+            "designId": null
+          }
+        }
+      }
+    },
+    "checkbox": {
+      "active": {
+        "$type": "color",
+        "$value": "{blue.500}",
+        "$extensions": {
+          "figma": {
+            "variableId": "VariableID:43:28",
+            "variableKey": "ba29cf85f9a2c3fec0adb0465793cc8d9494a8b4",
+            "variableName": "checkbox/active",
+            "variableType": "color",
+            "collectionId": "VariableCollectionId:1:61",
+            "collectionName": "ocean",
+            "designId": null
+          }
+        }
+      }
+    },
+    "text": {
+      "accent": {
+        "$type": "color",
+        "$value": "{blue.500}",
+        "$extensions": {
+          "figma": {
+            "variableId": "VariableID:43:29",
+            "variableKey": "e7e8c930a878d20b23cc1ece2a04c63ed8304da1",
+            "variableName": "text/accent",
+            "variableType": "color",
+            "collectionId": "VariableCollectionId:1:61",
+            "collectionName": "ocean",
+            "designId": null
+          }
+        }
+      }
     }
   },
   "component": {},

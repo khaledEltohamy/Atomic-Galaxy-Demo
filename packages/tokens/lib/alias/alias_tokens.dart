@@ -65,4 +65,42 @@ class AliasTokens {
 
   static const Color textDisabled = GlobalTokens.gray400;
 
+  static const Color textAccent = GlobalTokens.violet500;
+
+  static const Color statusSuccess = GlobalTokens.green500;
+
+  static const Color statusDanger = GlobalTokens.red500;
+
+  static const Color ratingStar = GlobalTokens.amber400;
+
+  static const Color appBarBackground = GlobalTokens.baseWhite;
+
+  static const Color appBarTitle = GlobalTokens.gray900;
+
+  static const Color navigationBarBackground = GlobalTokens.baseWhite;
+
+  static const Color navigationBarActive = GlobalTokens.violet500;
+
+  static const Color navigationBarInactive = GlobalTokens.gray400;
+
+  static const Color switchActive = GlobalTokens.violet500;
+
+  static const Color switchInactive = GlobalTokens.gray300;
+
+  static const Color switchThumb = GlobalTokens.baseWhite;
+
+  static const Color sliderActive = GlobalTokens.violet500;
+
+  static const Color sliderTrack = GlobalTokens.gray200;
+
+  static const Color checkboxActive = GlobalTokens.violet500;
+
+  static const Color checkboxBorder = GlobalTokens.gray300;
+
+  static const Color badgeBackground = GlobalTokens.red500;
+
+  static const Color badgeText = GlobalTokens.baseWhite;
+
+  static const Color surfaceImage = GlobalTokens.gray100;
+
 }

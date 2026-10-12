@@ -3,8 +3,9 @@
 
 import 'package:flutter/material.dart';
 import 'package:design_system/design_system.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import '../../../../../generated/routes/app_router.dart';
-
+import '../../../../../generated/constants/assets_path.dart';
 
 class Profile extends StatelessWidget {
   const Profile({super.key});
@@ -16,7 +17,6 @@ class Profile extends StatelessWidget {
       body: SafeArea(
         child: SingleChildScrollView(
           child: Container(
-          padding: const EdgeInsets.fromLTRB(24.0, 64.0, 24.0, 32.0),
           decoration: BoxDecoration(
             color: context.ds.backgroundPrimary,
           ),
@@ -25,65 +25,109 @@ class Profile extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            AppText(
-              'Profile',
-              style: TextStyle(color: context.ds.textPrimary, fontFamily: 'Inter', fontSize: 28.0, fontWeight: FontWeight.w600),
-              textAlign: TextAlign.left,
-            ),
-            const SizedBox(height: 16.0),
-            AppText(
-              'Update your details',
-              style: TextStyle(color: context.ds.textSecondary, fontFamily: 'Inter', fontSize: 14.0, fontWeight: FontWeight.w400),
-              textAlign: TextAlign.left,
-            ),
-            const SizedBox(height: 16.0),
-            AppCard(
-              image: Container(
-                width: double.infinity,
-                height: 140.0,
-                decoration: BoxDecoration(color: context.ds.borderPrimary),
-                ),
-              imageHeight: 140.0,
-              contentPadding: const EdgeInsets.fromLTRB(16.0, 16.0, 16.0, 16.0),
+            AppBar(title: AppText('Profile')),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(16.0, 16.0, 16.0, 16.0),
               child: Column(
-                crossAxisAlignment: CrossAxisAlignment.stretch,
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  AppText(
-                    'Your account',
-                    style: TextStyle(color: context.ds.textPrimary, fontFamily: 'Inter', fontSize: 18.0, fontWeight: FontWeight.w600),
-                    textAlign: TextAlign.left,
-                  ),
-                  const SizedBox(height: 6.0),
-                  AppText(
-                    'This card hides its image with the boolean property.',
-                    style: TextStyle(color: context.ds.textSecondary, fontFamily: 'Inter', fontSize: 14.0, fontWeight: FontWeight.w400),
-                    textAlign: TextAlign.left,
-                  ),
-                ],
+              mainAxisSize: MainAxisSize.max,
+              mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(0.0, 8.0, 0.0, 8.0),
+                  child: Row(
+                  mainAxisSize: MainAxisSize.max,
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    AppText(
+                      'Orders',
+                      style: TextStyle(color: context.ds.textPrimary, fontFamily: 'Inter', fontSize: 15.0, fontWeight: FontWeight.w500),
+                      textAlign: TextAlign.left,
+                    ),
+                    const SizedBox(width: 8.0),
+                    SvgPicture.asset(
+                      iconIconChevron58212,
+                      width: 24.0,
+                      height: 24.0,
+                    ),
+                  ],
                 ),
-            ),
-            const SizedBox(height: 16.0),
-            AppTextField(
-              label: 'Full name',
-              hintText: 'Jane Doe',
-              variant: DsTextFieldVariant.defaultStyle,
-            ),
-            const SizedBox(height: 16.0),
-            DsButton(
-              label: 'Save',
-              variant: DsButtonVariant.primary,
-              onPressed: () {},
-            ),
-            const SizedBox(height: 16.0),
-            DsButton(
-              label: 'Back',
-              variant: DsButtonVariant.tertiary,
-              onPressed: () {
+                ),
+                const SizedBox(height: 12.0),
+                const Divider(),
+                const SizedBox(height: 12.0),
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(0.0, 8.0, 0.0, 8.0),
+                  child: Row(
+                  mainAxisSize: MainAxisSize.max,
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    AppText(
+                      'Addresses',
+                      style: TextStyle(color: context.ds.textPrimary, fontFamily: 'Inter', fontSize: 15.0, fontWeight: FontWeight.w500),
+                      textAlign: TextAlign.left,
+                    ),
+                    const SizedBox(width: 8.0),
+                    SvgPicture.asset(
+                      iconIconChevron58212,
+                      width: 24.0,
+                      height: 24.0,
+                    ),
+                  ],
+                ),
+                ),
+                const SizedBox(height: 12.0),
+                const Divider(),
+                const SizedBox(height: 12.0),
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(0.0, 8.0, 0.0, 8.0),
+                  child: Row(
+                  mainAxisSize: MainAxisSize.max,
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    AppText(
+                      'Payment methods',
+                      style: TextStyle(color: context.ds.textPrimary, fontFamily: 'Inter', fontSize: 15.0, fontWeight: FontWeight.w500),
+                      textAlign: TextAlign.left,
+                    ),
+                    const SizedBox(width: 8.0),
+                    SvgPicture.asset(
+                      iconIconChevron58212,
+                      width: 24.0,
+                      height: 24.0,
+                    ),
+                  ],
+                ),
+                ),
+                const SizedBox(height: 12.0),
+                const Divider(),
+                const SizedBox(height: 12.0),
+                SwitchListTile(value: false, onChanged: (_) {}, title: AppText('Notifications')),
+                const SizedBox(height: 12.0),
+                DropdownButtonFormField<String>(decoration: InputDecoration(labelText: 'English'), items: const [], onChanged: (_) {}),
+                const SizedBox(height: 12.0),
+                const SizedBox(height: 350.0),
+                const SizedBox(height: 12.0),
+                DsButton(
+                  label: 'Sign out',
+                  variant: DsButtonVariant.secondary,
+                  onPressed: () {
   Navigator.of(context)
-      .pushNamed(AppRouter.welcomeRoute);
+      .pushNamed(AppRouter.loginRoute);
 },
+                ),
+              ],
             ),
+            ),
+            NavigationBar(destinations: [
+                NavigationDestination(icon: const Icon(Icons.circle), label: 'Home'),
+                NavigationDestination(icon: const Icon(Icons.circle), label: 'Favorites'),
+                NavigationDestination(icon: const Icon(Icons.circle), label: 'Cart'),
+                NavigationDestination(icon: const Icon(Icons.circle), label: 'Profile'),
+              ]),
           ],
         ),
         ),

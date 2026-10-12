@@ -11,7 +11,7 @@
           "variableType": "color",
           "collectionId": "VariableCollectionId:1:20",
           "collectionName": "alias",
-          "nodeId": "2:23",
+          "nodeId": "58:202",
           "nodeName": "Profile",
           "nodeType": "FRAME",
           "page": "Pages",
@@ -47,10 +47,10 @@
           "variableType": "color",
           "collectionId": "VariableCollectionId:1:20",
           "collectionName": "alias",
-          "nodeId": "I2:43;2:18",
+          "nodeId": "2:18",
           "nodeName": "Image",
           "nodeType": "FRAME",
-          "page": "Pages",
+          "page": "Components",
           "designId": "Image"
         }
       }
@@ -69,7 +69,7 @@
             "variableType": "color",
             "collectionId": "VariableCollectionId:1:20",
             "collectionName": "alias",
-            "nodeId": "2:51",
+            "nodeId": "58:198",
             "nodeName": "Button",
             "nodeType": "INSTANCE",
             "page": "Pages",
@@ -133,7 +133,7 @@
             "variableType": "color",
             "collectionId": "VariableCollectionId:1:20",
             "collectionName": "alias",
-            "nodeId": "I2:51;2:4",
+            "nodeId": "I58:198;2:4",
             "nodeName": "Label",
             "nodeType": "TEXT",
             "page": "Pages",
@@ -169,7 +169,7 @@
             "variableType": "color",
             "collectionId": "VariableCollectionId:1:20",
             "collectionName": "alias",
-            "nodeId": "2:39",
+            "nodeId": "58:234",
             "nodeName": "Button",
             "nodeType": "INSTANCE",
             "page": "Pages",
@@ -188,7 +188,7 @@
             "variableType": "color",
             "collectionId": "VariableCollectionId:1:20",
             "collectionName": "alias",
-            "nodeId": "I2:39;2:6",
+            "nodeId": "I58:234;2:6",
             "nodeName": "Label",
             "nodeType": "TEXT",
             "page": "Pages",
@@ -224,7 +224,7 @@
             "variableType": "color",
             "collectionId": "VariableCollectionId:1:20",
             "collectionName": "alias",
-            "nodeId": "2:53",
+            "nodeId": "58:200",
             "nodeName": "Button",
             "nodeType": "INSTANCE",
             "page": "Pages",
@@ -243,7 +243,7 @@
             "variableType": "color",
             "collectionId": "VariableCollectionId:1:20",
             "collectionName": "alias",
-            "nodeId": "I2:53;2:8",
+            "nodeId": "I58:200;2:8",
             "nodeName": "Label",
             "nodeType": "TEXT",
             "page": "Pages",
@@ -280,11 +280,11 @@
           "variableType": "color",
           "collectionId": "VariableCollectionId:1:20",
           "collectionName": "alias",
-          "nodeId": "2:43",
-          "nodeName": "Card",
+          "nodeId": "50:177",
+          "nodeName": "cart-item",
           "nodeType": "INSTANCE",
           "page": "Pages",
-          "designId": "Card"
+          "designId": "cart-item"
         }
       }
     },
@@ -316,7 +316,11 @@
           "variableType": "color",
           "collectionId": "VariableCollectionId:1:20",
           "collectionName": "alias",
-          "designId": null
+          "nodeId": "58:224",
+          "nodeName": "divider",
+          "nodeType": "INSTANCE",
+          "page": "Pages",
+          "designId": "divider"
         }
       }
     }
@@ -350,7 +354,11 @@
           "variableType": "color",
           "collectionId": "VariableCollectionId:1:20",
           "collectionName": "alias",
-          "designId": null
+          "nodeId": "I58:229;47:70;47:23",
+          "nodeName": "Vector",
+          "nodeType": "VECTOR",
+          "page": "Pages",
+          "designId": "Vector"
         }
       }
     }
@@ -367,11 +375,11 @@
           "variableType": "color",
           "collectionId": "VariableCollectionId:1:20",
           "collectionName": "alias",
-          "nodeId": "2:48",
-          "nodeName": "TextField",
+          "nodeId": "58:229",
+          "nodeName": "dropdown",
           "nodeType": "INSTANCE",
           "page": "Pages",
-          "designId": "TextField"
+          "designId": "dropdown"
         }
       }
     },
@@ -416,7 +424,7 @@
           "variableType": "color",
           "collectionId": "VariableCollectionId:1:20",
           "collectionName": "alias",
-          "nodeId": "I2:48;2:12",
+          "nodeId": "I58:166;2:12",
           "nodeName": "Placeholder",
           "nodeType": "TEXT",
           "page": "Pages",
@@ -435,7 +443,11 @@
           "variableType": "color",
           "collectionId": "VariableCollectionId:1:20",
           "collectionName": "alias",
-          "designId": null
+          "nodeId": "I58:229;47:69",
+          "nodeName": "Value",
+          "nodeType": "TEXT",
+          "page": "Pages",
+          "designId": "Value"
         }
       }
     }
@@ -452,7 +464,11 @@
           "variableType": "color",
           "collectionId": "VariableCollectionId:1:20",
           "collectionName": "alias",
-          "designId": null
+          "nodeId": "I58:175;47:45",
+          "nodeName": "dot",
+          "nodeType": "FRAME",
+          "page": "Pages",
+          "designId": "dot"
         }
       }
     }
@@ -469,11 +485,11 @@
           "variableType": "color",
           "collectionId": "VariableCollectionId:1:20",
           "collectionName": "alias",
-          "nodeId": "I2:43;2:20",
-          "nodeName": "Title",
+          "nodeId": "I58:225;47:35",
+          "nodeName": "Label",
           "nodeType": "TEXT",
           "page": "Pages",
-          "designId": "Title"
+          "designId": "Label"
         }
       }
     },
@@ -488,11 +504,11 @@
           "variableType": "color",
           "collectionId": "VariableCollectionId:1:20",
           "collectionName": "alias",
-          "nodeId": "I2:48;2:11",
-          "nodeName": "Label",
+          "nodeId": "58:196",
+          "nodeName": "Subtitle",
           "nodeType": "TEXT",
           "page": "Pages",
-          "designId": "Label"
+          "designId": "Subtitle"
         }
       }
     },
@@ -508,6 +524,377 @@
           "collectionId": "VariableCollectionId:1:20",
           "collectionName": "alias",
           "designId": null
+        }
+      }
+    },
+    "accent": {
+      "$type": "color",
+      "$value": "{violet.500}",
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:43:23",
+          "variableKey": "e596c4283f13c0746dcb833c7ce1af253c125e19",
+          "variableName": "text/accent",
+          "variableType": "color",
+          "collectionId": "VariableCollectionId:1:20",
+          "collectionName": "alias",
+          "nodeId": "I50:177;47:79",
+          "nodeName": "Price",
+          "nodeType": "TEXT",
+          "page": "Pages",
+          "designId": "Price"
+        }
+      }
+    }
+  },
+  "status": {
+    "success": {
+      "$type": "color",
+      "$value": "{green.500}",
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:43:6",
+          "variableKey": "b034a96d717158982488f48aacfc03fbbc3f07b0",
+          "variableName": "status/success",
+          "variableType": "color",
+          "collectionId": "VariableCollectionId:1:20",
+          "collectionName": "alias",
+          "nodeId": "58:192",
+          "nodeName": "status",
+          "nodeType": "FRAME",
+          "page": "Pages",
+          "designId": "status"
+        }
+      }
+    },
+    "danger": {
+      "$type": "color",
+      "$value": "{red.500}",
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:43:7",
+          "variableKey": "baa6c6d6019b7cfa9979253c153635b9962235af",
+          "variableName": "status/danger",
+          "variableType": "color",
+          "collectionId": "VariableCollectionId:1:20",
+          "collectionName": "alias",
+          "designId": null
+        }
+      }
+    }
+  },
+  "rating": {
+    "star": {
+      "$type": "color",
+      "$value": "{amber.400}",
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:43:8",
+          "variableKey": "2836ec31c8f33eb0756938cd7320161e088e4783",
+          "variableName": "rating/star",
+          "variableType": "color",
+          "collectionId": "VariableCollectionId:1:20",
+          "collectionName": "alias",
+          "nodeId": "I50:99;43:54",
+          "nodeName": "Vector",
+          "nodeType": "VECTOR",
+          "page": "Pages",
+          "designId": "Vector"
+        }
+      }
+    }
+  },
+  "appBar": {
+    "background": {
+      "$type": "color",
+      "$value": "{base.white}",
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:43:9",
+          "variableKey": "60de387b53b04a41ee5ba6dae94fbe2a97f419be",
+          "variableName": "appBar/background",
+          "variableType": "color",
+          "collectionId": "VariableCollectionId:1:20",
+          "collectionName": "alias",
+          "nodeId": "58:203",
+          "nodeName": "app-bar",
+          "nodeType": "INSTANCE",
+          "page": "Pages",
+          "designId": "app-bar"
+        }
+      }
+    },
+    "title": {
+      "$type": "color",
+      "$value": "{gray.900}",
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:43:10",
+          "variableKey": "56ef2e8dc47414a6859c0b6072946b657390085f",
+          "variableName": "appBar/title",
+          "variableType": "color",
+          "collectionId": "VariableCollectionId:1:20",
+          "collectionName": "alias",
+          "nodeId": "I58:203;44:6;43:42",
+          "nodeName": "Vector",
+          "nodeType": "VECTOR",
+          "page": "Pages",
+          "designId": "Vector"
+        }
+      }
+    }
+  },
+  "navigationBar": {
+    "background": {
+      "$type": "color",
+      "$value": "{base.white}",
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:43:11",
+          "variableKey": "172c44723e9b1d18dd0ca862d1aa9ef2b3dd31ec",
+          "variableName": "navigationBar/background",
+          "variableType": "color",
+          "collectionId": "VariableCollectionId:1:20",
+          "collectionName": "alias",
+          "nodeId": "58:236",
+          "nodeName": "navigation-bar",
+          "nodeType": "INSTANCE",
+          "page": "Pages",
+          "designId": "navigation-bar"
+        }
+      }
+    },
+    "active": {
+      "$type": "color",
+      "$value": "{violet.500}",
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:43:12",
+          "variableKey": "cf2fad8f240f955ab6e9a508483be0620380c219",
+          "variableName": "navigationBar/active",
+          "variableType": "color",
+          "collectionId": "VariableCollectionId:1:20",
+          "collectionName": "alias",
+          "nodeId": "I58:236;44:82",
+          "nodeName": "Label",
+          "nodeType": "TEXT",
+          "page": "Pages",
+          "designId": "Label"
+        }
+      }
+    },
+    "inactive": {
+      "$type": "color",
+      "$value": "{gray.400}",
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:43:13",
+          "variableKey": "04e3cb4f946be55e090de9a5d52fb0e6656dfbc5",
+          "variableName": "navigationBar/inactive",
+          "variableType": "color",
+          "collectionId": "VariableCollectionId:1:20",
+          "collectionName": "alias",
+          "nodeId": "I58:236;44:78",
+          "nodeName": "Label",
+          "nodeType": "TEXT",
+          "page": "Pages",
+          "designId": "Label"
+        }
+      }
+    }
+  },
+  "switch": {
+    "active": {
+      "$type": "color",
+      "$value": "{violet.500}",
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:43:14",
+          "variableKey": "fb5c504679abf82bcdd4c89fe03c412326c7c68f",
+          "variableName": "switch/active",
+          "variableType": "color",
+          "collectionId": "VariableCollectionId:1:20",
+          "collectionName": "alias",
+          "nodeId": "I58:225;47:36",
+          "nodeName": "track",
+          "nodeType": "FRAME",
+          "page": "Pages",
+          "designId": "track"
+        }
+      }
+    },
+    "inactive": {
+      "$type": "color",
+      "$value": "{gray.300}",
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:43:15",
+          "variableKey": "a4122b0412e77701299305a4e85a52068e0a6c75",
+          "variableName": "switch/inactive",
+          "variableType": "color",
+          "collectionId": "VariableCollectionId:1:20",
+          "collectionName": "alias",
+          "nodeId": "47:40",
+          "nodeName": "track",
+          "nodeType": "FRAME",
+          "page": "Components",
+          "designId": "track"
+        }
+      }
+    },
+    "thumb": {
+      "$type": "color",
+      "$value": "{base.white}",
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:43:16",
+          "variableKey": "7e7d8c76e034ddf634a6ec51bc4ccd0ba3623833",
+          "variableName": "switch/thumb",
+          "variableType": "color",
+          "collectionId": "VariableCollectionId:1:20",
+          "collectionName": "alias",
+          "nodeId": "I58:225;47:37",
+          "nodeName": "thumb",
+          "nodeType": "FRAME",
+          "page": "Pages",
+          "designId": "thumb"
+        }
+      }
+    }
+  },
+  "slider": {
+    "active": {
+      "$type": "color",
+      "$value": "{violet.500}",
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:43:17",
+          "variableKey": "13b50c7745b319dafccd5c41790ebc53bc6b8832",
+          "variableName": "slider/active",
+          "variableType": "color",
+          "collectionId": "VariableCollectionId:1:20",
+          "collectionName": "alias",
+          "nodeId": "I50:132;47:53",
+          "nodeName": "Active",
+          "nodeType": "RECTANGLE",
+          "page": "Pages",
+          "designId": "Active"
+        }
+      }
+    },
+    "track": {
+      "$type": "color",
+      "$value": "{gray.200}",
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:43:18",
+          "variableKey": "295b0ffe97365960f5aac92f7de3bb7feb65e55c",
+          "variableName": "slider/track",
+          "variableType": "color",
+          "collectionId": "VariableCollectionId:1:20",
+          "collectionName": "alias",
+          "nodeId": "I50:132;47:52",
+          "nodeName": "Track",
+          "nodeType": "RECTANGLE",
+          "page": "Pages",
+          "designId": "Track"
+        }
+      }
+    }
+  },
+  "checkbox": {
+    "active": {
+      "$type": "color",
+      "$value": "{violet.500}",
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:43:19",
+          "variableKey": "4876f71d202b15823f1ce0aef4b6e58438db4774",
+          "variableName": "checkbox/active",
+          "variableType": "color",
+          "collectionId": "VariableCollectionId:1:20",
+          "collectionName": "alias",
+          "nodeId": "I50:148;47:26",
+          "nodeName": "box",
+          "nodeType": "FRAME",
+          "page": "Pages",
+          "designId": "box"
+        }
+      }
+    },
+    "border": {
+      "$type": "color",
+      "$value": "{gray.300}",
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:43:20",
+          "variableKey": "a9b24702d113a5faf6a43c663c78405d8e418b7f",
+          "variableName": "checkbox/border",
+          "variableType": "color",
+          "collectionId": "VariableCollectionId:1:20",
+          "collectionName": "alias",
+          "designId": null
+        }
+      }
+    }
+  },
+  "badge": {
+    "background": {
+      "$type": "color",
+      "$value": "{red.500}",
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:43:21",
+          "variableKey": "3f413326684dd41d9390854e547389c9610bb973",
+          "variableName": "badge/background",
+          "variableType": "color",
+          "collectionId": "VariableCollectionId:1:20",
+          "collectionName": "alias",
+          "nodeId": "50:95",
+          "nodeName": "badge",
+          "nodeType": "INSTANCE",
+          "page": "Pages",
+          "designId": "badge"
+        }
+      }
+    },
+    "text": {
+      "$type": "color",
+      "$value": "{base.white}",
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:43:22",
+          "variableKey": "142c29d5f4af9542525f2ba3b126ca9889f6f2a8",
+          "variableName": "badge/text",
+          "variableType": "color",
+          "collectionId": "VariableCollectionId:1:20",
+          "collectionName": "alias",
+          "nodeId": "I50:95;47:74",
+          "nodeName": "Label",
+          "nodeType": "TEXT",
+          "page": "Pages",
+          "designId": "Label"
+        }
+      }
+    }
+  },
+  "surface": {
+    "image": {
+      "$type": "color",
+      "$value": "{gray.100}",
+      "$extensions": {
+        "figma": {
+          "variableId": "VariableID:43:24",
+          "variableKey": "77693d23aba80e333372776804d2fdf333862621",
+          "variableName": "surface/image",
+          "variableType": "color",
+          "collectionId": "VariableCollectionId:1:20",
+          "collectionName": "alias",
+          "nodeId": "47:76",
+          "nodeName": "Image",
+          "nodeType": "FRAME",
+          "page": "Components",
+          "designId": "Image"
         }
       }
     }
