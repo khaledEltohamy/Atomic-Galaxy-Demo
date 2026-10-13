@@ -36,24 +36,62 @@ class AppCard extends StatelessWidget {
     BorderRadius.circular(
   tokens.cardComponentRadius,
 );
-    final content = Column(
-      mainAxisSize: MainAxisSize.min,
-      crossAxisAlignment: CrossAxisAlignment.stretch,
-      children: [
-        if (image != null)
-          SizedBox(
-            width: double.infinity,
-            height: imageHeight ?? tokens.cardComponentImageHeight,
-            child: ClipRRect(
-              borderRadius: radius,
-              child: image,
+    final designImageHeight =
+        imageHeight ?? tokens.cardComponentImageHeight;
+
+    final imageBox = image == null
+        ? null
+        : ClipRRect(
+            borderRadius: radius,
+            child: image,
+          );
+
+    final body = Padding(
+      padding: contentPadding ?? tokens.cardComponentContentPadding,
+      child: child,
+    );
+
+    // The card adapts to the room it is given:
+    // - with a bounded height (a grid cell) the text keeps the height it
+    //   needs, the image takes what is left, and nothing can overflow;
+    // - with an unbounded height (a plain column) the card hugs its content.
+    final content = LayoutBuilder(
+      builder: (context, constraints) {
+        final bounded =
+            constraints.hasBoundedHeight && constraints.hasBoundedWidth;
+
+        if (!bounded || imageBox == null) {
+          return Column(
+            mainAxisSize: MainAxisSize.min,
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              if (imageBox != null)
+                SizedBox(
+                  width: double.infinity,
+                  height: designImageHeight,
+                  child: imageBox,
+                ),
+              body,
+            ],
+          );
+        }
+
+        return CustomMultiChildLayout(
+          delegate: _AppCardLayout(),
+          children: [
+            LayoutId(
+              id: _AppCardSlot.body,
+              child: ClipRect(
+                child: SingleChildScrollView(
+                  physics: const NeverScrollableScrollPhysics(),
+                  child: body,
+                ),
+              ),
             ),
-          ),
-        Padding(
-          padding: contentPadding ??tokens.cardComponentContentPadding,
-          child: child,
-        ),
-      ],
+            LayoutId(id: _AppCardSlot.image, child: imageBox),
+          ],
+        );
+      },
     );
 
     final card = Container(
@@ -82,4 +120,38 @@ class AppCard extends StatelessWidget {
       child: InkWell(onTap: onTap, borderRadius: radius, child: card),
     );
   }
+}
+
+enum _AppCardSlot { image, body }
+
+/// Lays out the text first, at the height it needs (clipped, never an
+/// overflow error), then gives the image whatever height is left.
+class _AppCardLayout extends MultiChildLayoutDelegate {
+  @override
+  void performLayout(Size size) {
+    final bodySize = layoutChild(
+      _AppCardSlot.body,
+      BoxConstraints(
+        minWidth: size.width,
+        maxWidth: size.width,
+        maxHeight: size.height,
+      ),
+    );
+
+    final room = size.height - bodySize.height;
+    final imageHeight = room > 0 ? room : 0.0;
+
+    if (hasChild(_AppCardSlot.image)) {
+      layoutChild(
+        _AppCardSlot.image,
+        BoxConstraints.tight(Size(size.width, imageHeight)),
+      );
+      positionChild(_AppCardSlot.image, Offset.zero);
+    }
+
+    positionChild(_AppCardSlot.body, Offset(0, imageHeight));
+  }
+
+  @override
+  bool shouldRelayout(covariant MultiChildLayoutDelegate oldDelegate) => false;
 }
