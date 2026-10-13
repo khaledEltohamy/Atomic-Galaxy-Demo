@@ -3,7 +3,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:design_system/design_system.dart';
-
+import 'package:flutter_svg/flutter_svg.dart';
 import '../../../../../generated/routes/app_router.dart';
 import '../../../../../generated/constants/assets_path.dart';
 
@@ -14,9 +14,36 @@ class Filters extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: context.ds.backgroundPrimary,
+      appBar: AppBar(
+        automaticallyImplyLeading: false,
+        toolbarHeight: 48.0,
+        centerTitle: false,
+        leading: IconButton(
+            onPressed: () => Navigator.of(context).maybePop(),
+            icon: SvgPicture.asset(
+              iconIconBack449,
+              width: 24.0,
+              height: 24.0,
+            ),
+          ),
+        title: AppText('Filters'),
+        actions: [
+            IconButton(
+              onPressed: () {},
+              icon: SvgPicture.asset(
+                iconIconHeart4412,
+                width: 24.0,
+                height: 24.0,
+              ),
+            ),
+        ],
+      ),
       body: SafeArea(
-        child: SingleChildScrollView(
-          child: Container(
+        child: LayoutBuilder(
+          builder: (context, constraints) => SingleChildScrollView(
+            child: ConstrainedBox(
+              constraints: BoxConstraints(minHeight: constraints.maxHeight),
+              child: IntrinsicHeight(child: Container(
           decoration: BoxDecoration(
             color: context.ds.backgroundPrimary,
           ),
@@ -25,8 +52,7 @@ class Filters extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            AppBar(title: AppText('Filters')),
-            Padding(
+            Expanded(child: Padding(
               padding: const EdgeInsets.fromLTRB(16.0, 16.0, 16.0, 16.0),
               child: Column(
               mainAxisSize: MainAxisSize.max,
@@ -39,18 +65,22 @@ class Filters extends StatelessWidget {
                   textAlign: TextAlign.left,
                 ),
                 const SizedBox(height: 16.0),
-                AppSlider(value: 0.600, onChanged: (_) {}),
+                SizedBox(
+                  width: 320.0,
+                  height: 24.0,
+                  child: AppSlider(value: 0.600, onChanged: (_) {}),
+                ),
                 const SizedBox(height: 16.0),
                 Row(
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    AppText(
+                    Expanded(child: AppText(
                       '\$0',
                       style: TextStyle(color: context.ds.textSecondary, fontFamily: 'Inter', fontSize: 13.0, fontWeight: FontWeight.w500),
                       textAlign: TextAlign.left,
-                    ),
+                    )),
                     const SizedBox(width: 8.0),
                     AppText(
                       '\$500',
@@ -70,9 +100,16 @@ class Filters extends StatelessWidget {
                 const SizedBox(height: 16.0),
                 SwitchListTile(value: false, onChanged: (_) {}, title: AppText('In stock only')),
                 const SizedBox(height: 16.0),
-                CheckboxListTile(value: false, onChanged: (_) {}, title: AppText('Free delivery')),
+                AppCheckbox(
+                  label: 'Free delivery',
+                  initialValue: true,
+                  gap: 12.0,
+                ),
                 const SizedBox(height: 16.0),
-                const SizedBox(height: 356.0),
+                Expanded(child: SizedBox(
+                  width: 10.0,
+                  child: const SizedBox(height: 356.0),
+                )),
                 const SizedBox(height: 16.0),
                 DsButton(
                   label: 'Apply filters',
@@ -90,10 +127,12 @@ class Filters extends StatelessWidget {
                 ),
               ],
             ),
-            ),
+            )),
           ],
         ),
-        ),
+        )),
+            ),
+          ),
         ),
       ),
     );

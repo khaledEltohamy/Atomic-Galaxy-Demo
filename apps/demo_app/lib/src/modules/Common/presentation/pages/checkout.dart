@@ -3,7 +3,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:design_system/design_system.dart';
-
+import 'package:flutter_svg/flutter_svg.dart';
 import '../../../../../generated/routes/app_router.dart';
 import '../../../../../generated/constants/assets_path.dart';
 
@@ -14,6 +14,30 @@ class Checkout extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: context.ds.backgroundPrimary,
+      appBar: AppBar(
+        automaticallyImplyLeading: false,
+        toolbarHeight: 48.0,
+        centerTitle: false,
+        leading: IconButton(
+            onPressed: () => Navigator.of(context).maybePop(),
+            icon: SvgPicture.asset(
+              iconIconBack449,
+              width: 24.0,
+              height: 24.0,
+            ),
+          ),
+        title: AppText('Checkout'),
+        actions: [
+            IconButton(
+              onPressed: () {},
+              icon: SvgPicture.asset(
+                iconIconHeart4412,
+                width: 24.0,
+                height: 24.0,
+              ),
+            ),
+        ],
+      ),
       body: SafeArea(
         child: SingleChildScrollView(
           child: Container(
@@ -25,7 +49,6 @@ class Checkout extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            AppBar(title: AppText('Checkout')),
             Padding(
               padding: const EdgeInsets.fromLTRB(16.0, 16.0, 16.0, 16.0),
               child: Column(
@@ -53,14 +76,23 @@ class Checkout extends StatelessWidget {
                   textAlign: TextAlign.left,
                 ),
                 const SizedBox(height: 16.0),
-                ListView(shrinkWrap: true, physics: const NeverScrollableScrollPhysics(), children: [
+                ListView.separated(
+                  shrinkWrap: true,
+                  physics: const NeverScrollableScrollPhysics(),
+                  itemCount: 2,
+                  separatorBuilder: (_, __) => SizedBox(height: 12.0),
+                  itemBuilder: (context, index) => <Widget>[
                     AppRadio<String>(value: 'Credit card', groupValue: null, onChanged: (_) {}, label: 'Credit card'),
                     AppRadio<String>(value: 'Cash on delivery', groupValue: null, onChanged: (_) {}, label: 'Cash on delivery'),
-                  ]),
+                  ][index],
+                ),
                 const SizedBox(height: 16.0),
                 SwitchListTile(value: false, onChanged: (_) {}, title: AppText('Save payment method')),
                 const SizedBox(height: 16.0),
-                const SizedBox(height: 371.0),
+                SizedBox(
+                  width: 10.0,
+                  child: const SizedBox(height: 371.0),
+                ),
                 const SizedBox(height: 16.0),
                 DsButton(
                   label: 'Place order',

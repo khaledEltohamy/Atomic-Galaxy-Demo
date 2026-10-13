@@ -35,10 +35,21 @@ final borderColor =
         : tokens.inputBorder;
 
 return TextFormField(
+  controller: controller,
+  focusNode: focusNode,
+  enabled: enabled,
+  obscureText: obscureText,
+  keyboardType: keyboardType,
+  onChanged: onChanged,
+  validator: validator,
   style: TextStyle(
     color: tokens.inputText,
   ),
   decoration: InputDecoration(
+    labelText: label,
+    hintText: hintText,
+    floatingLabelBehavior: FloatingLabelBehavior.always,
+    filled: true,
     fillColor: cloudy
         ? tokens.backgroundSecondary
         : tokens.inputBackground,

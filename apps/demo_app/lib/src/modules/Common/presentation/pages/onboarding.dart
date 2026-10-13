@@ -15,8 +15,11 @@ class Onboarding extends StatelessWidget {
     return Scaffold(
       backgroundColor: context.ds.backgroundPrimary,
       body: SafeArea(
-        child: SingleChildScrollView(
-          child: AppPagedView(
+        child: LayoutBuilder(
+          builder: (context, constraints) => SingleChildScrollView(
+            child: ConstrainedBox(
+              constraints: BoxConstraints(minHeight: constraints.maxHeight),
+              child: IntrinsicHeight(child: AppPagedView(
           height: 844.0,
           showIndicator: false,
           itemCount: 1,
@@ -28,11 +31,14 @@ class Onboarding extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  Image.asset(
+                  SizedBox(
+                    height: 180.0,
+                    child: Image.asset(
                     hero4831,
                     width: 342.0,
                     height: 180.0,
                     fit: BoxFit.fill,
+                  ),
                   ),
                   const SizedBox(height: 16.0),
                   AppPageIndicator(count: 3, index: 0),
@@ -49,7 +55,10 @@ class Onboarding extends StatelessWidget {
                     textAlign: TextAlign.left,
                   ),
                   const SizedBox(height: 16.0),
-                  const SizedBox(height: 290.0),
+                  Expanded(child: SizedBox(
+                    width: 10.0,
+                    child: const SizedBox(height: 290.0),
+                  )),
                   const SizedBox(height: 16.0),
                   DsButton(
                     label: 'Get started',
@@ -72,7 +81,9 @@ class Onboarding extends StatelessWidget {
               ),
               ),
           ][index],
-        ),
+        )),
+            ),
+          ),
         ),
       ),
     );

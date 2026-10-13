@@ -14,6 +14,74 @@ class Profile extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: context.ds.backgroundPrimary,
+      appBar: AppBar(
+        automaticallyImplyLeading: false,
+        toolbarHeight: 48.0,
+        centerTitle: false,
+        title: AppText('Profile'),
+        actions: [
+            IconButton(
+              onPressed: () {},
+              icon: SvgPicture.asset(
+                iconIconBell444,
+                width: 24.0,
+                height: 24.0,
+              ),
+            ),
+            IconButton(
+              onPressed: () => Navigator.of(context).pushNamed(AppRouter.cartRoute),
+              icon: SvgPicture.asset(
+                iconIconCart446,
+                width: 24.0,
+                height: 24.0,
+              ),
+            ),
+        ],
+      ),
+      bottomNavigationBar: NavigationBar(
+        selectedIndex: 3,
+        onDestinationSelected: (index) {
+          final routes = <String?>[AppRouter.homeRoute, null, AppRouter.cartRoute, AppRouter.profileRoute];
+          final route = routes[index];
+          if (route != null && index != 3) {
+            Navigator.of(context).pushReplacementNamed(route);
+          }
+        },
+        destinations: [
+          NavigationDestination(
+            icon: SvgPicture.asset(
+                iconIconHome4434,
+                width: 24.0,
+                height: 24.0,
+              ),
+            label: 'Home',
+          ),
+          NavigationDestination(
+            icon: SvgPicture.asset(
+                iconIconHeart4421,
+                width: 24.0,
+                height: 24.0,
+              ),
+            label: 'Favorites',
+          ),
+          NavigationDestination(
+            icon: SvgPicture.asset(
+                iconIconCart4425,
+                width: 24.0,
+                height: 24.0,
+              ),
+            label: 'Cart',
+          ),
+          NavigationDestination(
+            icon: SvgPicture.asset(
+                iconIconPerson4480,
+                width: 24.0,
+                height: 24.0,
+              ),
+            label: 'Profile',
+          ),
+        ],
+      ),
       body: SafeArea(
         child: SingleChildScrollView(
           child: Container(
@@ -25,7 +93,6 @@ class Profile extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            AppBar(title: AppText('Profile')),
             Padding(
               padding: const EdgeInsets.fromLTRB(16.0, 16.0, 16.0, 16.0),
               child: Column(
@@ -40,22 +107,29 @@ class Profile extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    AppText(
+                    Expanded(child: AppText(
                       'Orders',
                       style: TextStyle(color: context.ds.textPrimary, fontFamily: 'Inter', fontSize: 15.0, fontWeight: FontWeight.w500),
                       textAlign: TextAlign.left,
-                    ),
+                    )),
                     const SizedBox(width: 8.0),
-                    SvgPicture.asset(
+                    SizedBox(
+                      width: 24.0,
+                      height: 24.0,
+                      child: SvgPicture.asset(
                       iconIconChevron58212,
                       width: 24.0,
                       height: 24.0,
+                    ),
                     ),
                   ],
                 ),
                 ),
                 const SizedBox(height: 12.0),
-                const Divider(),
+                SizedBox(
+                  height: 1.0,
+                  child: const Divider(),
+                ),
                 const SizedBox(height: 12.0),
                 Padding(
                   padding: const EdgeInsets.fromLTRB(0.0, 8.0, 0.0, 8.0),
@@ -64,22 +138,29 @@ class Profile extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    AppText(
+                    Expanded(child: AppText(
                       'Addresses',
                       style: TextStyle(color: context.ds.textPrimary, fontFamily: 'Inter', fontSize: 15.0, fontWeight: FontWeight.w500),
                       textAlign: TextAlign.left,
-                    ),
+                    )),
                     const SizedBox(width: 8.0),
-                    SvgPicture.asset(
+                    SizedBox(
+                      width: 24.0,
+                      height: 24.0,
+                      child: SvgPicture.asset(
                       iconIconChevron58212,
                       width: 24.0,
                       height: 24.0,
+                    ),
                     ),
                   ],
                 ),
                 ),
                 const SizedBox(height: 12.0),
-                const Divider(),
+                SizedBox(
+                  height: 1.0,
+                  child: const Divider(),
+                ),
                 const SizedBox(height: 12.0),
                 Padding(
                   padding: const EdgeInsets.fromLTRB(0.0, 8.0, 0.0, 8.0),
@@ -88,28 +169,38 @@ class Profile extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    AppText(
+                    Expanded(child: AppText(
                       'Payment methods',
                       style: TextStyle(color: context.ds.textPrimary, fontFamily: 'Inter', fontSize: 15.0, fontWeight: FontWeight.w500),
                       textAlign: TextAlign.left,
-                    ),
+                    )),
                     const SizedBox(width: 8.0),
-                    SvgPicture.asset(
+                    SizedBox(
+                      width: 24.0,
+                      height: 24.0,
+                      child: SvgPicture.asset(
                       iconIconChevron58212,
                       width: 24.0,
                       height: 24.0,
+                    ),
                     ),
                   ],
                 ),
                 ),
                 const SizedBox(height: 12.0),
-                const Divider(),
+                SizedBox(
+                  height: 1.0,
+                  child: const Divider(),
+                ),
                 const SizedBox(height: 12.0),
                 SwitchListTile(value: false, onChanged: (_) {}, title: AppText('Notifications')),
                 const SizedBox(height: 12.0),
                 DropdownButtonFormField<String>(decoration: InputDecoration(labelText: 'English'), items: const [], onChanged: (_) {}),
                 const SizedBox(height: 12.0),
-                const SizedBox(height: 350.0),
+                SizedBox(
+                  width: 10.0,
+                  child: const SizedBox(height: 350.0),
+                ),
                 const SizedBox(height: 12.0),
                 DsButton(
                   label: 'Sign out',
@@ -122,12 +213,6 @@ class Profile extends StatelessWidget {
               ],
             ),
             ),
-            NavigationBar(destinations: [
-                NavigationDestination(icon: const Icon(Icons.circle), label: 'Home'),
-                NavigationDestination(icon: const Icon(Icons.circle), label: 'Favorites'),
-                NavigationDestination(icon: const Icon(Icons.circle), label: 'Cart'),
-                NavigationDestination(icon: const Icon(Icons.circle), label: 'Profile'),
-              ]),
           ],
         ),
         ),

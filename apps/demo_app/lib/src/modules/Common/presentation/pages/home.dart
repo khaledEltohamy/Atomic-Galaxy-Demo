@@ -3,7 +3,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:design_system/design_system.dart';
-
+import 'package:flutter_svg/flutter_svg.dart';
 import '../../../../../generated/routes/app_router.dart';
 import '../../../../../generated/constants/assets_path.dart';
 
@@ -14,6 +14,74 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: context.ds.backgroundPrimary,
+      appBar: AppBar(
+        automaticallyImplyLeading: false,
+        toolbarHeight: 48.0,
+        centerTitle: false,
+        title: AppText('Atomic Shop'),
+        actions: [
+            IconButton(
+              onPressed: () {},
+              icon: SvgPicture.asset(
+                iconIconBell444,
+                width: 24.0,
+                height: 24.0,
+              ),
+            ),
+            IconButton(
+              onPressed: () => Navigator.of(context).pushNamed(AppRouter.cartRoute),
+              icon: SvgPicture.asset(
+                iconIconCart446,
+                width: 24.0,
+                height: 24.0,
+              ),
+            ),
+        ],
+      ),
+      bottomNavigationBar: NavigationBar(
+        selectedIndex: 0,
+        onDestinationSelected: (index) {
+          final routes = <String?>[AppRouter.homeRoute, null, AppRouter.cartRoute, AppRouter.profileRoute];
+          final route = routes[index];
+          if (route != null && index != 0) {
+            Navigator.of(context).pushReplacementNamed(route);
+          }
+        },
+        destinations: [
+          NavigationDestination(
+            icon: SvgPicture.asset(
+                iconIconHome4417,
+                width: 24.0,
+                height: 24.0,
+              ),
+            label: 'Home',
+          ),
+          NavigationDestination(
+            icon: SvgPicture.asset(
+                iconIconHeart4421,
+                width: 24.0,
+                height: 24.0,
+              ),
+            label: 'Favorites',
+          ),
+          NavigationDestination(
+            icon: SvgPicture.asset(
+                iconIconCart4425,
+                width: 24.0,
+                height: 24.0,
+              ),
+            label: 'Cart',
+          ),
+          NavigationDestination(
+            icon: SvgPicture.asset(
+                iconIconPerson4429,
+                width: 24.0,
+                height: 24.0,
+              ),
+            label: 'Profile',
+          ),
+        ],
+      ),
       body: SafeArea(
         child: SingleChildScrollView(
           child: Container(
@@ -25,7 +93,6 @@ class Home extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            AppBar(title: AppText('Atomic Shop')),
             Padding(
               padding: const EdgeInsets.fromLTRB(16.0, 16.0, 16.0, 16.0),
               child: Column(
@@ -39,30 +106,47 @@ class Home extends StatelessWidget {
                   variant: DsTextFieldVariant.defaultStyle,
                 ),
                 const SizedBox(height: 16.0),
-                ListView(shrinkWrap: true, physics: const NeverScrollableScrollPhysics(), children: [
-                    DsButton(
-                      label: 'All',
-                      variant: DsButtonVariant.primary,
-                      onPressed: () {},
-                    ),
-                    DsButton(
-                      label: 'Audio',
-                      variant: DsButtonVariant.secondary,
-                      onPressed: () {},
-                    ),
-                    DsButton(
-                      label: 'Home',
-                      variant: DsButtonVariant.secondary,
-                      onPressed: () {},
-                    ),
-                    DsButton(
-                      label: 'Sports',
-                      variant: DsButtonVariant.secondary,
-                      onPressed: () {},
-                    ),
-                  ]),
+                SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  child: Row(
+                    children: [
+                      DsButton(
+                        label: 'All',
+                        variant: DsButtonVariant.primary,
+                        onPressed: () {},
+                      ),
+                      SizedBox(width: 8.0),
+                      DsButton(
+                        label: 'Audio',
+                        variant: DsButtonVariant.secondary,
+                        onPressed: () {},
+                      ),
+                      SizedBox(width: 8.0),
+                      DsButton(
+                        label: 'Home',
+                        variant: DsButtonVariant.secondary,
+                        onPressed: () {},
+                      ),
+                      SizedBox(width: 8.0),
+                      DsButton(
+                        label: 'Sports',
+                        variant: DsButtonVariant.secondary,
+                        onPressed: () {},
+                      ),
+                    ],
+                  ),
+                ),
                 const SizedBox(height: 16.0),
-                GridView.count(shrinkWrap: true, physics: const NeverScrollableScrollPhysics(), crossAxisCount: 2, children: [
+                GridView(
+                  shrinkWrap: true,
+                  physics: const NeverScrollableScrollPhysics(),
+                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                    crossAxisCount: 2,
+                    mainAxisSpacing: 12.0,
+                    crossAxisSpacing: 12.0,
+                    mainAxisExtent: 219.0,
+                  ),
+                  children: [
                     AppCard(
                       image: Image.asset(
                           sample14827,
@@ -117,9 +201,19 @@ class Home extends StatelessWidget {
                         ],
                         ),
                     ),
-                  ]),
+                  ],
+                ),
                 const SizedBox(height: 16.0),
-                GridView.count(shrinkWrap: true, physics: const NeverScrollableScrollPhysics(), crossAxisCount: 2, children: [
+                GridView(
+                  shrinkWrap: true,
+                  physics: const NeverScrollableScrollPhysics(),
+                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                    crossAxisCount: 2,
+                    mainAxisSpacing: 12.0,
+                    crossAxisSpacing: 12.0,
+                    mainAxisExtent: 219.0,
+                  ),
+                  children: [
                     AppCard(
                       image: Image.asset(
                           sample34829,
@@ -174,18 +268,16 @@ class Home extends StatelessWidget {
                         ],
                         ),
                     ),
-                  ]),
+                  ],
+                ),
                 const SizedBox(height: 16.0),
-                const SizedBox(height: 100.0),
+                SizedBox(
+                  width: 10.0,
+                  child: const SizedBox(height: 100.0),
+                ),
               ],
             ),
             ),
-            NavigationBar(destinations: [
-                NavigationDestination(icon: const Icon(Icons.circle), label: 'Home'),
-                NavigationDestination(icon: const Icon(Icons.circle), label: 'Favorites'),
-                NavigationDestination(icon: const Icon(Icons.circle), label: 'Cart'),
-                NavigationDestination(icon: const Icon(Icons.circle), label: 'Profile'),
-              ]),
           ],
         ),
         ),
