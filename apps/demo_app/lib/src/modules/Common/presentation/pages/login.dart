@@ -15,8 +15,11 @@ class Login extends StatelessWidget {
     return Scaffold(
       backgroundColor: context.ds.backgroundPrimary,
       body: SafeArea(
-        child: SingleChildScrollView(
-          child: Container(
+        child: LayoutBuilder(
+          builder: (context, constraints) => SingleChildScrollView(
+            child: ConstrainedBox(
+              constraints: BoxConstraints(minHeight: constraints.maxHeight),
+              child: IntrinsicHeight(child: Container(
           decoration: BoxDecoration(
             color: context.ds.backgroundPrimary,
           ),
@@ -25,7 +28,7 @@ class Login extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            Padding(
+            Expanded(child: Padding(
               padding: const EdgeInsets.fromLTRB(24.0, 72.0, 24.0, 24.0),
               child: Column(
               mainAxisSize: MainAxisSize.max,
@@ -56,9 +59,16 @@ class Login extends StatelessWidget {
                   variant: DsTextFieldVariant.cloudy,
                 ),
                 const SizedBox(height: 16.0),
-                CheckboxListTile(value: false, onChanged: (_) {}, title: AppText('Remember me')),
+                AppCheckbox(
+                  label: 'Remember me',
+                  initialValue: true,
+                  gap: 12.0,
+                ),
                 const SizedBox(height: 16.0),
-                const SizedBox(height: 327.0),
+                Expanded(child: SizedBox(
+                  width: 10.0,
+                  child: const SizedBox(height: 327.0),
+                )),
                 const SizedBox(height: 16.0),
                 DsButton(
                   label: 'Sign in',
@@ -69,7 +79,10 @@ class Login extends StatelessWidget {
 },
                 ),
                 const SizedBox(height: 16.0),
-                const Divider(),
+                SizedBox(
+                  height: 1.0,
+                  child: const Divider(),
+                ),
                 const SizedBox(height: 16.0),
                 DsButton(
                   label: 'Create account',
@@ -78,10 +91,12 @@ class Login extends StatelessWidget {
                 ),
               ],
             ),
-            ),
+            )),
           ],
         ),
-        ),
+        )),
+            ),
+          ),
         ),
       ),
     );

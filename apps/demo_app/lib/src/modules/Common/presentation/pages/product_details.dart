@@ -14,6 +14,30 @@ class ProductDetails extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: context.ds.backgroundPrimary,
+      appBar: AppBar(
+        automaticallyImplyLeading: false,
+        toolbarHeight: 48.0,
+        centerTitle: false,
+        leading: IconButton(
+            onPressed: () => Navigator.of(context).maybePop(),
+            icon: SvgPicture.asset(
+              iconIconBack449,
+              width: 24.0,
+              height: 24.0,
+            ),
+          ),
+        title: AppText('Details'),
+        actions: [
+            IconButton(
+              onPressed: () {},
+              icon: SvgPicture.asset(
+                iconIconHeart4412,
+                width: 24.0,
+                height: 24.0,
+              ),
+            ),
+        ],
+      ),
       body: SafeArea(
         child: SingleChildScrollView(
           child: Container(
@@ -25,7 +49,6 @@ class ProductDetails extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            AppBar(title: AppText('Details')),
             Padding(
               padding: const EdgeInsets.fromLTRB(16.0, 16.0, 16.0, 16.0),
               child: Column(
@@ -33,11 +56,14 @@ class ProductDetails extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
-                Image.asset(
+                SizedBox(
+                  height: 220.0,
+                  child: Image.asset(
                   sample14827,
                   width: 358.0,
                   height: 220.0,
                   fit: BoxFit.fill,
+                ),
                 ),
                 const SizedBox(height: 12.0),
                 Row(
@@ -45,11 +71,11 @@ class ProductDetails extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    AppText(
+                    Expanded(child: AppText(
                       'Wireless Headphones',
                       style: TextStyle(color: context.ds.textPrimary, fontFamily: 'Inter', fontSize: 22.0, fontWeight: FontWeight.w600),
                       textAlign: TextAlign.left,
-                    ),
+                    )),
                     const SizedBox(width: 8.0),
                     Container(
                       padding: const EdgeInsets.fromLTRB(8.0, 3.0, 8.0, 3.0),
@@ -84,10 +110,14 @@ class ProductDetails extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    SvgPicture.asset(
+                    SizedBox(
+                      width: 18.0,
+                      height: 18.0,
+                      child: SvgPicture.asset(
                       iconIconStar5099,
                       width: 18.0,
                       height: 18.0,
+                    ),
                     ),
                     const SizedBox(width: 6.0),
                     AppText(
@@ -167,7 +197,10 @@ class ProductDetails extends StatelessWidget {
                   ],
                 ),
                 const SizedBox(height: 12.0),
-                const SizedBox(height: 208.0),
+                SizedBox(
+                  width: 10.0,
+                  child: const SizedBox(height: 208.0),
+                ),
                 const SizedBox(height: 12.0),
                 DsButton(
                   label: 'Add to cart',

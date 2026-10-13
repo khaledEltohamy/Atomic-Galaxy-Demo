@@ -32,7 +32,10 @@ class OrderPlaced extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
-                const SizedBox(height: 224.0),
+                SizedBox(
+                  width: 10.0,
+                  child: const SizedBox(height: 224.0),
+                ),
                 const SizedBox(height: 16.0),
                 SizedBox(
                   width: 96.0,
@@ -48,10 +51,14 @@ class OrderPlaced extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    SvgPicture.asset(
+                    SizedBox(
+                      width: 48.0,
+                      height: 48.0,
+                      child: SvgPicture.asset(
                       iconIconCheck58193,
                       width: 48.0,
                       height: 48.0,
+                    ),
                     ),
                   ],
                 ),
@@ -70,7 +77,10 @@ class OrderPlaced extends StatelessWidget {
                   textAlign: TextAlign.center,
                 ),
                 const SizedBox(height: 16.0),
-                const SizedBox(height: 224.0),
+                SizedBox(
+                  width: 10.0,
+                  child: const SizedBox(height: 224.0),
+                ),
                 const SizedBox(height: 16.0),
                 DsButton(
                   label: 'Track order',

@@ -14,6 +14,74 @@ class Cart extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: context.ds.backgroundPrimary,
+      appBar: AppBar(
+        automaticallyImplyLeading: false,
+        toolbarHeight: 48.0,
+        centerTitle: false,
+        leading: IconButton(
+            onPressed: () => Navigator.of(context).maybePop(),
+            icon: SvgPicture.asset(
+              iconIconBack449,
+              width: 24.0,
+              height: 24.0,
+            ),
+          ),
+        title: AppText('Cart'),
+        actions: [
+            IconButton(
+              onPressed: () {},
+              icon: SvgPicture.asset(
+                iconIconHeart4412,
+                width: 24.0,
+                height: 24.0,
+              ),
+            ),
+        ],
+      ),
+      bottomNavigationBar: NavigationBar(
+        selectedIndex: 2,
+        onDestinationSelected: (index) {
+          final routes = <String?>[AppRouter.homeRoute, null, AppRouter.cartRoute, AppRouter.profileRoute];
+          final route = routes[index];
+          if (route != null && index != 2) {
+            Navigator.of(context).pushReplacementNamed(route);
+          }
+        },
+        destinations: [
+          NavigationDestination(
+            icon: SvgPicture.asset(
+                iconIconHome4434,
+                width: 24.0,
+                height: 24.0,
+              ),
+            label: 'Home',
+          ),
+          NavigationDestination(
+            icon: SvgPicture.asset(
+                iconIconHeart4421,
+                width: 24.0,
+                height: 24.0,
+              ),
+            label: 'Favorites',
+          ),
+          NavigationDestination(
+            icon: SvgPicture.asset(
+                iconIconCart4459,
+                width: 24.0,
+                height: 24.0,
+              ),
+            label: 'Cart',
+          ),
+          NavigationDestination(
+            icon: SvgPicture.asset(
+                iconIconPerson4429,
+                width: 24.0,
+                height: 24.0,
+              ),
+            label: 'Profile',
+          ),
+        ],
+      ),
       body: SafeArea(
         child: SingleChildScrollView(
           child: Container(
@@ -25,7 +93,6 @@ class Cart extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            AppBar(title: AppText('Cart')),
             Padding(
               padding: const EdgeInsets.fromLTRB(16.0, 16.0, 16.0, 16.0),
               child: Column(
@@ -45,17 +112,21 @@ class Cart extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    Image.asset(
+                    SizedBox(
+                      width: 72.0,
+                      height: 72.0,
+                      child: Image.asset(
                       sample14827,
                       width: 72.0,
                       height: 72.0,
                       fit: BoxFit.fill,
                     ),
+                    ),
                     const SizedBox(width: 12.0),
                     Expanded(child: Column(
                       mainAxisSize: MainAxisSize.min,
                       mainAxisAlignment: MainAxisAlignment.start,
-                      crossAxisAlignment: CrossAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.stretch,
                       children: [
                         AppText(
                           'Headphones',
@@ -76,10 +147,14 @@ class Cart extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.start,
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
-                        SvgPicture.asset(
+                        SizedBox(
+                          width: 20.0,
+                          height: 20.0,
+                          child: SvgPicture.asset(
                           iconIconMinus4781,
                           width: 20.0,
                           height: 20.0,
+                        ),
                         ),
                         const SizedBox(width: 10.0),
                         AppText(
@@ -88,10 +163,14 @@ class Cart extends StatelessWidget {
                           textAlign: TextAlign.left,
                         ),
                         const SizedBox(width: 10.0),
-                        SvgPicture.asset(
+                        SizedBox(
+                          width: 20.0,
+                          height: 20.0,
+                          child: SvgPicture.asset(
                           iconIconPlus4784,
                           width: 20.0,
                           height: 20.0,
+                        ),
                         ),
                       ],
                     ),
@@ -111,17 +190,21 @@ class Cart extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    Image.asset(
+                    SizedBox(
+                      width: 72.0,
+                      height: 72.0,
+                      child: Image.asset(
                       sample34829,
                       width: 72.0,
                       height: 72.0,
                       fit: BoxFit.fill,
                     ),
+                    ),
                     const SizedBox(width: 12.0),
                     Expanded(child: Column(
                       mainAxisSize: MainAxisSize.min,
                       mainAxisAlignment: MainAxisAlignment.start,
-                      crossAxisAlignment: CrossAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.stretch,
                       children: [
                         AppText(
                           'Backpack',
@@ -142,10 +225,14 @@ class Cart extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.start,
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
-                        SvgPicture.asset(
+                        SizedBox(
+                          width: 20.0,
+                          height: 20.0,
+                          child: SvgPicture.asset(
                           iconIconMinus4781,
                           width: 20.0,
                           height: 20.0,
+                        ),
                         ),
                         const SizedBox(width: 10.0),
                         AppText(
@@ -154,10 +241,14 @@ class Cart extends StatelessWidget {
                           textAlign: TextAlign.left,
                         ),
                         const SizedBox(width: 10.0),
-                        SvgPicture.asset(
+                        SizedBox(
+                          width: 20.0,
+                          height: 20.0,
+                          child: SvgPicture.asset(
                           iconIconPlus4784,
                           width: 20.0,
                           height: 20.0,
+                        ),
                         ),
                       ],
                     ),
@@ -165,18 +256,21 @@ class Cart extends StatelessWidget {
                 ),
                 ),
                 const SizedBox(height: 12.0),
-                const Divider(),
+                SizedBox(
+                  height: 1.0,
+                  child: const Divider(),
+                ),
                 const SizedBox(height: 12.0),
                 Row(
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    AppText(
+                    Expanded(child: AppText(
                       'Subtotal',
                       style: TextStyle(color: context.ds.textSecondary, fontFamily: 'Inter', fontSize: 14.0, fontWeight: FontWeight.w400),
                       textAlign: TextAlign.left,
-                    ),
+                    )),
                     const SizedBox(width: 8.0),
                     AppText(
                       '\$257.00',
@@ -191,11 +285,11 @@ class Cart extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    AppText(
+                    Expanded(child: AppText(
                       'Delivery',
                       style: TextStyle(color: context.ds.textSecondary, fontFamily: 'Inter', fontSize: 14.0, fontWeight: FontWeight.w400),
                       textAlign: TextAlign.left,
-                    ),
+                    )),
                     const SizedBox(width: 8.0),
                     AppText(
                       '\$5.00',
@@ -205,18 +299,21 @@ class Cart extends StatelessWidget {
                   ],
                 ),
                 const SizedBox(height: 12.0),
-                const Divider(),
+                SizedBox(
+                  height: 1.0,
+                  child: const Divider(),
+                ),
                 const SizedBox(height: 12.0),
                 Row(
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    AppText(
+                    Expanded(child: AppText(
                       'Total',
                       style: TextStyle(color: context.ds.textPrimary, fontFamily: 'Inter', fontSize: 16.0, fontWeight: FontWeight.w600),
                       textAlign: TextAlign.left,
-                    ),
+                    )),
                     const SizedBox(width: 8.0),
                     AppText(
                       '\$262.00',
@@ -226,7 +323,10 @@ class Cart extends StatelessWidget {
                   ],
                 ),
                 const SizedBox(height: 12.0),
-                const SizedBox(height: 312.0),
+                SizedBox(
+                  width: 10.0,
+                  child: const SizedBox(height: 312.0),
+                ),
                 const SizedBox(height: 12.0),
                 DsButton(
                   label: 'Checkout',
@@ -239,12 +339,6 @@ class Cart extends StatelessWidget {
               ],
             ),
             ),
-            NavigationBar(destinations: [
-                NavigationDestination(icon: const Icon(Icons.circle), label: 'Home'),
-                NavigationDestination(icon: const Icon(Icons.circle), label: 'Favorites'),
-                NavigationDestination(icon: const Icon(Icons.circle), label: 'Cart'),
-                NavigationDestination(icon: const Icon(Icons.circle), label: 'Profile'),
-              ]),
           ],
         ),
         ),
