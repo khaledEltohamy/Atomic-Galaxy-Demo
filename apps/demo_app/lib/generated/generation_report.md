@@ -23,9 +23,9 @@ How each of the 187 generated layers was understood.
 | divider | 6 |
 | appBar | 6 |
 | radio | 5 |
-| image | 4 |
 | textField | 4 |
 | card | 4 |
+| image | 4 |
 | navigationBar | 3 |
 | dropdown | 3 |
 | switchControl | 3 |

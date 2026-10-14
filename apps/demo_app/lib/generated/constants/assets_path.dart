@@ -47,7 +47,9 @@ const String iconIconChevronDown4724 = '$basePath/icon-icon-chevron-down-47_24.s
 
 const String iconIconChevronDown4770 = '$basePath/icon-icon-chevron-down-47_70.svg';
 
-const String iconIconChevronDownI581694770 = '$basePath/icon-icon-chevron-down-I58_169_47_70.svg';
+const String iconIconChevronDownI501404770 = '$basePath/icon-icon-chevron-down-I50_140_47_70.svg';
+
+const String iconIconChevronDownI582294770 = '$basePath/icon-icon-chevron-down-I58_229_47_70.svg';
 
 const String iconIconClose4370 = '$basePath/icon-icon-close-43_70.svg';
 
@@ -73,6 +75,10 @@ const String iconIconMinus4361 = '$basePath/icon-icon-minus-43_61.svg';
 
 const String iconIconMinus4781 = '$basePath/icon-icon-minus-47_81.svg';
 
+const String iconIconMinusI501664781 = '$basePath/icon-icon-minus-I50_166_47_81.svg';
+
+const String iconIconMinusI501774781 = '$basePath/icon-icon-minus-I50_177_47_81.svg';
+
 const String iconIconPerson4346 = '$basePath/icon-icon-person-43_46.svg';
 
 const String iconIconPerson4429 = '$basePath/icon-icon-person-44_29.svg';
@@ -82,6 +88,10 @@ const String iconIconPerson4480 = '$basePath/icon-icon-person-44_80.svg';
 const String iconIconPlus4358 = '$basePath/icon-icon-plus-43_58.svg';
 
 const String iconIconPlus4784 = '$basePath/icon-icon-plus-47_84.svg';
+
+const String iconIconPlusI501664784 = '$basePath/icon-icon-plus-I50_166_47_84.svg';
+
+const String iconIconPlusI501774784 = '$basePath/icon-icon-plus-I50_177_47_84.svg';
 
 const String iconIconSearch4340 = '$basePath/icon-icon-search-43_40.svg';
 
