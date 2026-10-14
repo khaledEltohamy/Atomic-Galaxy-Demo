@@ -233,7 +233,7 @@
     },
     {
       "nodeId": "I50:140;47:70",
-      "path": "icon-icon-chevron-down-47_70.svg"
+      "path": "icon-icon-chevron-down-I50_140_47_70.svg"
     },
     {
       "nodeId": "I50:148;47:27",
@@ -249,19 +249,19 @@
     },
     {
       "nodeId": "I50:166;47:81",
-      "path": "icon-icon-minus-47_81.svg"
+      "path": "icon-icon-minus-I50_166_47_81.svg"
     },
     {
       "nodeId": "I50:166;47:84",
-      "path": "icon-icon-plus-47_84.svg"
+      "path": "icon-icon-plus-I50_166_47_84.svg"
     },
     {
       "nodeId": "I50:177;47:81",
-      "path": "icon-icon-minus-47_81.svg"
+      "path": "icon-icon-minus-I50_177_47_81.svg"
     },
     {
       "nodeId": "I50:177;47:84",
-      "path": "icon-icon-plus-47_84.svg"
+      "path": "icon-icon-plus-I50_177_47_84.svg"
     },
     {
       "nodeId": "I50:202;44:51",
@@ -289,7 +289,7 @@
     },
     {
       "nodeId": "I58:169;47:70",
-      "path": "icon-icon-chevron-down-I58_169_47_70.svg"
+      "path": "icon-icon-chevron-down-47_70.svg"
     },
     {
       "nodeId": "58:193",
@@ -317,7 +317,7 @@
     },
     {
       "nodeId": "I58:229;47:70",
-      "path": "icon-icon-chevron-down-I58_169_47_70.svg"
+      "path": "icon-icon-chevron-down-I58_229_47_70.svg"
     },
     {
       "nodeId": "I58:236;44:68",
