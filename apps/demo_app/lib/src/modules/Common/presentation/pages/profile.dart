@@ -41,11 +41,8 @@ class Profile extends StatelessWidget {
       bottomNavigationBar: NavigationBar(
         selectedIndex: 3,
         onDestinationSelected: (index) {
-          final routes = <String?>[AppRouter.homeRoute, null, AppRouter.cartRoute, AppRouter.profileRoute];
-          final route = routes[index];
-          if (route != null && index != 3) {
-            Navigator.of(context).pushReplacementNamed(route);
-          }
+          final actions = <VoidCallback?>[() => Navigator.of(context).pushReplacementNamed(AppRouter.homeRoute), null, () => Navigator.of(context).pushReplacementNamed(AppRouter.cartRoute), () => Navigator.of(context).pushReplacementNamed(AppRouter.profileRoute)];
+          if (index != 3) actions[index]?.call();
         },
         destinations: [
           NavigationDestination(
@@ -205,10 +202,7 @@ class Profile extends StatelessWidget {
                 DsButton(
                   label: 'Sign out',
                   variant: DsButtonVariant.secondary,
-                  onPressed: () {
-  Navigator.of(context)
-      .pushNamed(AppRouter.loginRoute);
-},
+                  onPressed: () => Navigator.of(context).pushNamed(AppRouter.loginRoute),
                 ),
               ],
             ),

@@ -205,10 +205,7 @@ class ProductDetails extends StatelessWidget {
                 DsButton(
                   label: 'Add to cart',
                   variant: DsButtonVariant.primary,
-                  onPressed: () {
-  Navigator.of(context)
-      .pushNamed(AppRouter.cartRoute);
-},
+                  onPressed: () => Navigator.of(context).pushNamed(AppRouter.cartRoute),
                 ),
               ],
             ),

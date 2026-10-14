@@ -63,19 +63,13 @@ class Onboarding extends StatelessWidget {
                   DsButton(
                     label: 'Get started',
                     variant: DsButtonVariant.primary,
-                    onPressed: () {
-  Navigator.of(context)
-      .pushNamed(AppRouter.loginRoute);
-},
+                    onPressed: () => Navigator.of(context).pushNamed(AppRouter.loginRoute),
                   ),
                   const SizedBox(height: 16.0),
                   DsButton(
                     label: 'Skip',
                     variant: DsButtonVariant.tertiary,
-                    onPressed: () {
-  Navigator.of(context)
-      .pushNamed(AppRouter.homeRoute);
-},
+                    onPressed: () => Navigator.of(context).pushNamed(AppRouter.homeRoute),
                   ),
                 ],
               ),

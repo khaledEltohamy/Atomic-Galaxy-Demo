@@ -85,19 +85,13 @@ class OrderPlaced extends StatelessWidget {
                 DsButton(
                   label: 'Track order',
                   variant: DsButtonVariant.primary,
-                  onPressed: () {
-  Navigator.of(context)
-      .pushNamed(AppRouter.profileRoute);
-},
+                  onPressed: () => Navigator.of(context).pushNamed(AppRouter.profileRoute),
                 ),
                 const SizedBox(height: 16.0),
                 DsButton(
                   label: 'Back to home',
                   variant: DsButtonVariant.tertiary,
-                  onPressed: () {
-  Navigator.of(context)
-      .pushNamed(AppRouter.homeRoute);
-},
+                  onPressed: () => Navigator.of(context).pushNamed(AppRouter.homeRoute),
                 ),
               ],
             ),
