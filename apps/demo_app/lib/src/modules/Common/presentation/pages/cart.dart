@@ -41,11 +41,8 @@ class Cart extends StatelessWidget {
       bottomNavigationBar: NavigationBar(
         selectedIndex: 2,
         onDestinationSelected: (index) {
-          final routes = <String?>[AppRouter.homeRoute, null, AppRouter.cartRoute, AppRouter.profileRoute];
-          final route = routes[index];
-          if (route != null && index != 2) {
-            Navigator.of(context).pushReplacementNamed(route);
-          }
+          final actions = <VoidCallback?>[() => Navigator.of(context).pushReplacementNamed(AppRouter.homeRoute), null, () => Navigator.of(context).pushReplacementNamed(AppRouter.cartRoute), () => Navigator.of(context).pushReplacementNamed(AppRouter.profileRoute)];
+          if (index != 2) actions[index]?.call();
         },
         destinations: [
           NavigationDestination(
@@ -331,10 +328,7 @@ class Cart extends StatelessWidget {
                 DsButton(
                   label: 'Checkout',
                   variant: DsButtonVariant.primary,
-                  onPressed: () {
-  Navigator.of(context)
-      .pushNamed(AppRouter.checkoutRoute);
-},
+                  onPressed: () => Navigator.of(context).pushNamed(AppRouter.checkoutRoute),
                 ),
               ],
             ),

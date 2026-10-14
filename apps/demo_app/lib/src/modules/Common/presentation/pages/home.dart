@@ -41,11 +41,8 @@ class Home extends StatelessWidget {
       bottomNavigationBar: NavigationBar(
         selectedIndex: 0,
         onDestinationSelected: (index) {
-          final routes = <String?>[AppRouter.homeRoute, null, AppRouter.cartRoute, AppRouter.profileRoute];
-          final route = routes[index];
-          if (route != null && index != 0) {
-            Navigator.of(context).pushReplacementNamed(route);
-          }
+          final actions = <VoidCallback?>[() => Navigator.of(context).pushReplacementNamed(AppRouter.homeRoute), null, () => Navigator.of(context).pushReplacementNamed(AppRouter.cartRoute), () => Navigator.of(context).pushReplacementNamed(AppRouter.profileRoute)];
+          if (index != 0) actions[index]?.call();
         },
         destinations: [
           NavigationDestination(
@@ -147,7 +144,12 @@ class Home extends StatelessWidget {
                     mainAxisExtent: 219.0,
                   ),
                   children: [
-                    AppCard(
+                    Material(
+                      type: MaterialType.transparency,
+                      child: InkWell(
+                        onTap: () => Navigator.of(context).pushNamed(AppRouter.productDetailsRoute),
+                        borderRadius: BorderRadius.circular(RadiusTokens.radius16),
+                        child: AppCard(
                       image: Image.asset(
                           sample14827,
                           width: double.infinity,
@@ -174,7 +176,14 @@ class Home extends StatelessWidget {
                         ],
                         ),
                     ),
-                    AppCard(
+                      ),
+                    ),
+                    Material(
+                      type: MaterialType.transparency,
+                      child: InkWell(
+                        onTap: () => Navigator.of(context).pushNamed(AppRouter.productDetailsRoute),
+                        borderRadius: BorderRadius.circular(RadiusTokens.radius16),
+                        child: AppCard(
                       image: Image.asset(
                           sample24828,
                           width: double.infinity,
@@ -201,6 +210,8 @@ class Home extends StatelessWidget {
                         ],
                         ),
                     ),
+                      ),
+                    ),
                   ],
                 ),
                 const SizedBox(height: 16.0),
@@ -214,7 +225,12 @@ class Home extends StatelessWidget {
                     mainAxisExtent: 219.0,
                   ),
                   children: [
-                    AppCard(
+                    Material(
+                      type: MaterialType.transparency,
+                      child: InkWell(
+                        onTap: () => Navigator.of(context).pushNamed(AppRouter.productDetailsRoute),
+                        borderRadius: BorderRadius.circular(RadiusTokens.radius16),
+                        child: AppCard(
                       image: Image.asset(
                           sample34829,
                           width: double.infinity,
@@ -241,7 +257,14 @@ class Home extends StatelessWidget {
                         ],
                         ),
                     ),
-                    AppCard(
+                      ),
+                    ),
+                    Material(
+                      type: MaterialType.transparency,
+                      child: InkWell(
+                        onTap: () => Navigator.of(context).pushNamed(AppRouter.productDetailsRoute),
+                        borderRadius: BorderRadius.circular(RadiusTokens.radius16),
+                        child: AppCard(
                       image: Image.asset(
                           sample44830,
                           width: double.infinity,
@@ -267,6 +290,8 @@ class Home extends StatelessWidget {
                           ),
                         ],
                         ),
+                    ),
+                      ),
                     ),
                   ],
                 ),

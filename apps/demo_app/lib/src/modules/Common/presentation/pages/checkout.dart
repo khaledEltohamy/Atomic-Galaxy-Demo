@@ -97,10 +97,7 @@ class Checkout extends StatelessWidget {
                 DsButton(
                   label: 'Place order',
                   variant: DsButtonVariant.primary,
-                  onPressed: () {
-  Navigator.of(context)
-      .pushNamed(AppRouter.orderPlacedRoute);
-},
+                  onPressed: () => Navigator.of(context).pushNamed(AppRouter.orderPlacedRoute),
                 ),
               ],
             ),

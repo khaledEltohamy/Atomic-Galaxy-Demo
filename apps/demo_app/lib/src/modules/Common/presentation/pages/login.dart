@@ -73,10 +73,7 @@ class Login extends StatelessWidget {
                 DsButton(
                   label: 'Sign in',
                   variant: DsButtonVariant.primary,
-                  onPressed: () {
-  Navigator.of(context)
-      .pushNamed(AppRouter.homeRoute);
-},
+                  onPressed: () => Navigator.of(context).pushNamed(AppRouter.homeRoute),
                 ),
                 const SizedBox(height: 16.0),
                 SizedBox(
