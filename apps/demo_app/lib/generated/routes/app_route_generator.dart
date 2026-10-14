@@ -4,15 +4,15 @@
 import 'package:flutter/cupertino.dart';
 
 import 'app_router.dart';
-import '../../src/modules/Common/presentation/pages/onboarding.dart';
-import '../../src/modules/Common/presentation/pages/login.dart';
-import '../../src/modules/Common/presentation/pages/home.dart';
-import '../../src/modules/Common/presentation/pages/cart.dart';
-import '../../src/modules/Common/presentation/pages/filters.dart';
-import '../../src/modules/Common/presentation/pages/product_details.dart';
-import '../../src/modules/Common/presentation/pages/profile.dart';
-import '../../src/modules/Common/presentation/pages/checkout.dart';
-import '../../src/modules/Common/presentation/pages/order_placed.dart';
+import '../../src/modules/Onboarding/presentation/pages/onboarding.dart';
+import '../../src/modules/Shell/presentation/pages/home.dart';
+import '../../src/modules/Cart/presentation/pages/cart.dart';
+import '../../src/modules/Product/presentation/pages/filters.dart';
+import '../../src/modules/Product/presentation/pages/product_details.dart';
+import '../../src/modules/Profile/presentation/pages/profile.dart';
+import '../../src/modules/Auth/presentation/pages/login.dart';
+import '../../src/modules/Checkout/presentation/pages/checkout.dart';
+import '../../src/modules/Checkout/presentation/pages/order_placed.dart';
 
 class AppRouteGenerator {
   const AppRouteGenerator._();
@@ -28,14 +28,6 @@ class AppRouteGenerator {
           ),
           builder: (context) =>
               const Onboarding(),
-        );
-      case AppRouter.loginRoute:
-        return CupertinoPageRoute(
-          settings: const RouteSettings(
-            name: AppRouter.loginRoute,
-          ),
-          builder: (context) =>
-              const Login(),
         );
       case AppRouter.homeRoute:
         return CupertinoPageRoute(
@@ -76,6 +68,14 @@ class AppRouteGenerator {
           ),
           builder: (context) =>
               const Profile(),
+        );
+      case AppRouter.loginRoute:
+        return CupertinoPageRoute(
+          settings: const RouteSettings(
+            name: AppRouter.loginRoute,
+          ),
+          builder: (context) =>
+              const Login(),
         );
       case AppRouter.checkoutRoute:
         return CupertinoPageRoute(

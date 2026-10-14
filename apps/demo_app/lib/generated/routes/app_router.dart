@@ -8,8 +8,6 @@ class AppRouter {
 
   static const String onboardingRoute = '/onboarding';
 
-  static const String loginRoute = '/login';
-
   static const String homeRoute = '/home';
 
   static const String cartRoute = '/cart';
@@ -19,6 +17,8 @@ class AppRouter {
   static const String productDetailsRoute = '/product_details';
 
   static const String profileRoute = '/profile';
+
+  static const String loginRoute = '/login';
 
   static const String checkoutRoute = '/checkout';
 
